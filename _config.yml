@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 twitter_username: reimand
 github_username: reimandlab
-minimal_mistakes_skin: default
+minimal_mistakes_skin: contrast
 search: true
 
 # Build settings
@@ -65,7 +65,7 @@ author:
     - label: "reimandlab.org"
       icon: "fas fa-fw fa-link"
       url: "https://www.reimandlab.org"
-    - label: "OICR"
+    - label: "Ontario Institute for Cancer Research"
       icon: "fas fa-fw fa-link"
       url: "https://www.oicr.on.ca"
     - label: "MBP, University of Toronto"
@@ -77,10 +77,10 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
+    - label: "@reimand"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/reimand"
-    - label: "GitHub"
+    - label: "reimandlab"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/reimandlab"
 
