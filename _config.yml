@@ -58,34 +58,31 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "The Reimand Lab"
+  name   : "Reimand Lab"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Computational biology and cancer research"
+  bio    : "Computational biology and cancer research - Ontario Institute for Cancer Research and University of Toronto"
   links:
-    - label: "Website"
+    - label: "reimandlab.org"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-#    - label: "Instagram"
-#      icon: "fab fa-fw fa-instagram"
-#      url: "https://instagram.com/"
+      url: "https://www.reimandlab.org"
+    - label: "OICR"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.oicr.on.ca"
+    - label: "Medical Biophysics, University of Toronto"
+      icon: "fas fa-fw fa-link"
+      url: "https://medbio.utoronto.ca/medical-biophysics"
+    - label: "Molecular Genetics, University of Toronto"
+      icon: "fas fa-fw fa-link"
+      url: "http://www.moleculargenetics.utoronto.ca/"
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/reimand"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-#    - label: "Instagram"
-#      icon: "fab fa-fw fa-instagram"
-#      url: "https://instagram.com/"
+      url: "https://github.com/reimandlab"
 
 defaults:
   # _posts
