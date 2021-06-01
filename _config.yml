@@ -59,7 +59,8 @@ plugins:
 
 author:
   name   : "Reimand Lab"
-  avatar : "/assets/images/logo_V4-01.png"
+#  avatar : "/assets/images/logo_V4-01.png"
+  logo: "/assets/images/logo_V4-01.png"
   bio    : "Computational biology and cancer research"
   links:
     - label: "reimandlab.org"
