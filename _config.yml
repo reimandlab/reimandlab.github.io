@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Reimand Lab"
   avatar : "/assets/images/logo_V4-01.png"
-  bio    : "Computational biology and cancer research | Ontario Institute for Cancer Research & University of Toronto"
+  bio    : "Computational biology and cancer research | Ontario Institute for Cancer Research | University of Toronto | Toronto ON Canada"
   links:
     - label: "reimandlab.org"
       icon: "fas fa-fw fa-link"
