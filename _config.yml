@@ -23,6 +23,7 @@ twitter_username: reimand
 github_username: reimandlab
 minimal_mistakes_skin: contrast
 search: true
+logo: "/assets/images/logo_V4-01.png"
 
 # Build settings
 markdown: kramdown
@@ -60,13 +61,12 @@ plugins:
 author:
   name   : "Reimand Lab"
 #  avatar : "/assets/images/logo_V4-01.png"
-  logo: "/assets/images/logo_V4-01.png"
   bio    : "Computational biology and cancer research"
   links:
     - label: "reimandlab.org"
       icon: "fas fa-fw fa-link"
       url: "https://www.reimandlab.org"
-    - label: "Ontario Institute for Cancer Research"
+    - label: "OICR"
       icon: "fas fa-fw fa-link"
       url: "https://www.oicr.on.ca"
     - label: "MBP, University of Toronto"
