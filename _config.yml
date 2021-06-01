@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: Reimand Lab
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+twitter_username: reimand
+github_username: reimandlab
 minimal_mistakes_skin: default
 search: true
 
@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Reimand Lab"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/logo_V4-01.png"
   bio    : "Computational biology and cancer research - Ontario Institute for Cancer Research and University of Toronto"
   links:
     - label: "reimandlab.org"
@@ -68,10 +68,10 @@ author:
     - label: "OICR"
       icon: "fas fa-fw fa-link"
       url: "https://www.oicr.on.ca"
-    - label: "Medical Biophysics, University of Toronto"
+    - label: "MBP, University of Toronto"
       icon: "fas fa-fw fa-link"
       url: "https://medbio.utoronto.ca/medical-biophysics"
-    - label: "Molecular Genetics, University of Toronto"
+    - label: "MoGen, University of Toronto"
       icon: "fas fa-fw fa-link"
       url: "http://www.moleculargenetics.utoronto.ca/"
 
