@@ -8,7 +8,8 @@ Principal Investigator, Computational Biology Program, Ontario Institute for Can
 Assistant Professor, Departments of Medical Biophysics and Molecular Genetics, University of Toronto  
 
 
-email: juri.reimand_AT_utoronto.ca (preferred); juri.reimand_AT_oicr.on.ca  
+email: juri.reimand_AT_utoronto.ca (preferred)
+email: juri.reimand_AT_oicr.on.ca  
 phone: +1 647 260 7983  
 twitter: @reimand  
 skype: juri.reimand  
