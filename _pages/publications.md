@@ -3,7 +3,7 @@ permalink: /publications/
 title: "Publications"
 ---
 
-Highlighted papers of the major research areas of the lab are listed below. See the full list of publications in the [Google Scholar](https://scholar.google.ca/citations?hl=en&user=hy4bI4UAAAAJ&view_op=list_works&sortby=pubdate){:target="_blank"} profile. Asterisk \* indicates co-first and co-corresponding authorships.
+Highlighted papers of the major research areas of the lab are listed below. See the full list of publications in the [Google Scholar](https://scholar.google.ca/citations?hl=en&user=hy4bI4UAAAAJ&view_op=list_works&sortby=pubdate){:target="_blank"} profile. Asterisk (\*) indicates co-first and co-corresponding authorships. Current and former lab members are shown in bold.
 
 ### cancer drivers and passengers
 
