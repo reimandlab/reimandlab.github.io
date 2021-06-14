@@ -1,5 +1,5 @@
 ---
-title: "New lab preprint on mutational processes in cancer genomes"
+title: "Preprint on mutational processes in cancer genomes"
 categories:
   - news
 tags:
