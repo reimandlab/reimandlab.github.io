@@ -4,42 +4,42 @@ title: "Team"
 ---
 
 ![jr](/assets/images/juri.png){: height="175px" width="175px" style="float: right"}
-**Jüri Reimand (PI)**.
-I am a principal investigator of computational biology at the Ontario Institute of Cancer Research (OICR) and assistant professor at the University of Toronto at the departments of Medical Biophysics and Molecular Genetics. I completed a PhD in computer science at the University of Tartu in Estonia in 2010 and postdoctoral training at the Donnelly Centre, University of Toronto (UofT) during 2011-2015. I started my lab at OICR and the UofT faculty appointment in 2015. I am interested in computational biology, machine learning, and cancer research. 
+**Jüri Reimand**.
+(PI) I am a principal investigator of computational biology at the Ontario Institute of Cancer Research (OICR) and assistant professor at the University of Toronto at the departments of Medical Biophysics and Molecular Genetics. I completed a PhD in computer science at the University of Tartu in Estonia in 2010 and postdoctoral training at the Donnelly Centre, University of Toronto (UofT) during 2011-2015. I started my lab at OICR and the UofT faculty appointment in 2015. I am interested in computational biology, machine learning, and cancer research. 
 [@reimand](https://twitter.com/reimand){:target="_blank"}
 
 
-**Oliver Ocsenas**
-I am a recent MSc. graduate from the University of Toronto, Department of Medical Biophysics and I am currently working in the Reimand Lab as a research student. I received a BSc. from the University of Toronto, Department of Physics in the Biological Physics Specialist program. My master's project focuses on investigating the associations between chromatin accessibility and regional mutation frequency in cancer. Chromatin accessibility is a strong predictor of regional mutation rates and we can use this association to better understand tissue of origin, mutational timing, and mutational processes in cancer. We use machine learning models such as random forest to elucidate these relationships and make inferences. My research interests include machine learning, mutational processes in cancer, epigenomics, and how normal cells transform and undergo oncogenesis. 
+**Oliver Ocsenas**.
+(bioinformatician) I am a recent MSc. graduate from the University of Toronto, Department of Medical Biophysics and I am currently working in the Reimand Lab as a research student. I received a BSc. from the University of Toronto, Department of Physics in the Biological Physics Specialist program. My master's project focuses on investigating the associations between chromatin accessibility and regional mutation frequency in cancer. Chromatin accessibility is a strong predictor of regional mutation rates and we can use this association to better understand tissue of origin, mutational timing, and mutational processes in cancer. We use machine learning models such as random forest to elucidate these relationships and make inferences. My research interests include machine learning, mutational processes in cancer, epigenomics, and how normal cells transform and undergo oncogenesis. 
 
 
-**Christian Lee**
-I grew up in California and moved to Toronto for my undergraduate studies. There, I developed an interest in genome and computational biology, which led me to graduate studies in Medical Biophysics. Broadly, I am interested in the interaction and integration of multi-level omics data. More recently, my work has focused on analyzing patterns of differential mutation frequencies across functional elements in cancer genomes. 
+**Christian Lee**.
+(graduate student) I grew up in California and moved to Toronto for my undergraduate studies. There, I developed an interest in genome and computational biology, which led me to graduate studies in Medical Biophysics. Broadly, I am interested in the interaction and integration of multi-level omics data. More recently, my work has focused on analyzing patterns of differential mutation frequencies across functional elements in cancer genomes. 
 
 
 **Masroor Bayati**.
-I am a PhD student in Medical Biophysics at the University of Toronto. My research is focused on the application of machine learning in identification of novel prognostic cancer biomarkers by leveraging multi-omics data. Currently, I am investigating the prognostic value of the interactions between cancer genetic events and the immune cell composition in tumor microenvironment.
+(graduate student) I am a PhD student in Medical Biophysics at the University of Toronto. My research is focused on the application of machine learning in identification of novel prognostic cancer biomarkers by leveraging multi-omics data. Currently, I am investigating the prognostic value of the interactions between cancer genetic events and the immune cell composition in tumor microenvironment.
 
 
-**Diogo Pellegrina**
-In 2020 I received my PhD degree in Bioinformatics from the university of Sao Paulo, where I analysed WGS and transcriptome data on cancer. I also  inferred function of lncRNAs related to cancer using co-expression networks, and analysed microarray expression data. After finishing my PhD I joined Reimand Lab and I'm working on three projects; analyzing how mutational signatures from different tissues may affect disproportionately driver genes or phosphorylation sites, the effect of immunosuppressive drugs in liver transplant patients, and how germline variants may affect phosphorylation rewiring by COVID infection.
+**Diogo Pellegrina**.
+(postdoctoral fellow) In 2020 I received my PhD degree in Bioinformatics from the university of Sao Paulo, where I analysed WGS and transcriptome data on cancer. I also  inferred function of lncRNAs related to cancer using co-expression networks, and analysed microarray expression data. After finishing my PhD I joined Reimand Lab and I'm working on three projects; analyzing how mutational signatures from different tissues may affect disproportionately driver genes or phosphorylation sites, the effect of immunosuppressive drugs in liver transplant patients, and how germline variants may affect phosphorylation rewiring by COVID infection.
 
 
-**Kevin Cheng**
-I received my BSc in biotechnology and MPhil in cell biology from the University of Hong Kong. I am currently a PhD student in Medical Biophysics. My research interest is in cancer treatment-induced mutation and their impact on tumors. I am studying mutation rate variation in regulatory genome elements associated with various treatments in metastatic tumors. I am also trying to find driver mutations that potentially contribute to drug resistance.
+**Kevin Cheng**.
+(graduate student) I received my BSc in biotechnology and MPhil in cell biology from the University of Hong Kong. I am currently a PhD student in Medical Biophysics. My research interest is in cancer treatment-induced mutation and their impact on tumors. I am studying mutation rate variation in regulatory genome elements associated with various treatments in metastatic tumors. I am also trying to find driver mutations that potentially contribute to drug resistance.
 
 
-** Alec Bahcheli **
-I am a PhD student in Computational Biology and Molecular Genetics at the University of Toronto. Prior to researching in the Reimand Lab I had completed an undergraduate and a Master's degrees in Biochemistry from the University of Western Ontario. My recent work involves investigating different ‘omic’ data from high-grade gliomas to elucidate the evolution of these brain cancers. I am interested in understanding how observations from different cancer datasets reflect specific and recurrent biological phenomena in tumors.
+**Alec Bahcheli**.
+(graduate student) I am a PhD student in Computational Biology and Molecular Genetics at the University of Toronto. Prior to researching in the Reimand Lab I had completed an undergraduate and a Master's degrees in Biochemistry from the University of Western Ontario. My recent work involves investigating different ‘omic’ data from high-grade gliomas to elucidate the evolution of these brain cancers. I am interested in understanding how observations from different cancer datasets reflect specific and recurrent biological phenomena in tumors.
 
 
 **Nina Adler**.
-Prior to joining the lab in summer 2021, I graduated from the University of Toronto with a Bachelor's in Molecular Genetics and a Master's in Medical Genomics. I have a strong interest in cancer biomarker discovery, and my current project involves the exploration of an emerging target gene class as potential biomarkers for clinical outcomes.
+(summer student) Prior to joining the lab in summer 2021, I graduated from the University of Toronto with a Bachelor's in Molecular Genetics and a Master's in Medical Genomics. I have a strong interest in cancer biomarker discovery, and my current project involves the exploration of an emerging target gene class as potential biomarkers for clinical outcomes.
 
 
-**Hasna Sultan**
-I am a graduate student in the bioinformatics program at the University of Guelph. I am excited to be a part of the Reimand Lab for my master’s project and apply and build on my bioinformatics skills when working with complex omics datasets. For my project, I look forward to using machine learning models to elucidate some of the complexity behind driver mutations in cancer.
+**Hasna Sultan**.
+(visiting graduate student) I am a graduate student in the bioinformatics program at the University of Guelph. I am excited to be a part of the Reimand Lab for my master’s project and apply and build on my bioinformatics skills when working with complex omics datasets. For my project, I look forward to using machine learning models to elucidate some of the complexity behind driver mutations in cancer.
 
 
 **Michael Slobodyanyuk**.
-I am a graduate student at the University of Toronto in the department of Medical Biophysics. I previously completed a MSc at the University of Ottawa, studying the structure-function relationship of ligand-gated ion channels using electrophysiology techniques. I'm interested in using an integrative approach to study large datasets of genomes, epigenomes, and transcriptomes, with the ultimate goal of identifying key pathways and genes implicated in cancer biology.
+(summer student) I am a graduate student at the University of Toronto in the department of Medical Biophysics. I previously completed a MSc at the University of Ottawa, studying the structure-function relationship of ligand-gated ion channels using electrophysiology techniques. I'm interested in using an integrative approach to study large datasets of genomes, epigenomes, and transcriptomes, with the ultimate goal of identifying key pathways and genes implicated in cancer biology.
