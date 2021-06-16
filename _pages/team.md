@@ -34,7 +34,7 @@ I received my BSc in biotechnology and MPhil in cell biology from the University
 I am a PhD student in Computational Biology and Molecular Genetics at the University of Toronto. Prior to researching in the Reimand Lab I had completed an undergraduate and a Master's degrees in Biochemistry from the University of Western Ontario. My recent work involves investigating different ‘omic’ data from high-grade gliomas to elucidate the evolution of these brain cancers. I am interested in understanding how observations from different cancer datasets reflect specific and recurrent biological phenomena in tumors.
 
 
-![na](/assets/images/NA2.png){: height="175px" width="175px" style="float: right"}
+![na](/assets/images/NA2.jpg){: height="175px" width="175px" style="float: right"}
 **Nina Adler** (summer student). 
 Prior to joining the lab in summer 2021, I graduated from the University of Toronto with a Bachelor's in Molecular Genetics and a Master's in Medical Genomics. I have a strong interest in cancer biomarker discovery, and my current project involves the exploration of an emerging target gene class as potential biomarkers for clinical outcomes.
 
