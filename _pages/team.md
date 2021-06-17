@@ -8,21 +8,26 @@ title: "Team"
 I am a principal investigator of computational biology at the Ontario Institute of Cancer Research (OICR) and assistant professor at the University of Toronto at the departments of Medical Biophysics and Molecular Genetics. I completed a PhD in computer science at the University of Tartu in Estonia in 2010 and postdoctoral training at the Donnelly Centre, University of Toronto (UofT) during 2011-2015. I started my lab at OICR and the UofT faculty appointment in 2015. I am interested in computational biology, machine learning, and cancer research. 
 [@reimand](https://twitter.com/reimand){:target="_blank"}
 
+
 ![oo](/assets/images/Oliver.png){: height="175px" width="175px" style="float: right"}
 **Oliver Ocsenas** (bioinformatician).
 I am a recent MSc. graduate from the University of Toronto, Department of Medical Biophysics and I am currently working in the Reimand Lab as a research student. I received a BSc. from the University of Toronto, Department of Physics in the Biological Physics Specialist program. My master's project focuses on investigating the associations between chromatin accessibility and regional mutation frequency in cancer. Chromatin accessibility is a strong predictor of regional mutation rates and we can use this association to better understand tissue of origin, mutational timing, and mutational processes in cancer. We use machine learning models such as random forest to elucidate these relationships and make inferences. My research interests include machine learning, mutational processes in cancer, epigenomics, and how normal cells transform and undergo oncogenesis. 
+
 
 ![cal](/assets/images/Christian.png){: height="175px" width="175px" style="float: right"}
 **Christian Lee** (graduate student).
 I grew up in California and moved to Toronto for my undergraduate studies. There, I developed an interest in genome and computational biology, which led me to graduate studies in Medical Biophysics. Broadly, I am interested in the interaction and integration of multi-level omics data. More recently, my work has focused on analyzing patterns of differential mutation frequencies across functional elements in cancer genomes. 
 
+
 ![mb](/assets/images/Masroor.jpg){: height="175px" width="175px" style="float: right"}
 **Masroor Bayati** (graduate student).
 I am a PhD student in Medical Biophysics at the University of Toronto. My research is focused on the application of machine learning in identification of novel prognostic cancer biomarkers by leveraging multi-omics data. Currently, I am investigating the prognostic value of the interactions between cancer genetic events and the immune cell composition in tumor microenvironment.
 
+
 ![dp](/assets/images/Diogo.png){: height="175px" width="175px" style="float: right"}
 **Diogo Pellegrina** (postdoctoral fellow).
 In 2020 I received my PhD degree in Bioinformatics from the university of Sao Paulo, where I analysed WGS and transcriptome data on cancer. I also  inferred function of lncRNAs related to cancer using co-expression networks, and analysed microarray expression data. After finishing my PhD I joined Reimand Lab and I'm working on three projects; analyzing how mutational signatures from different tissues may affect disproportionately driver genes or phosphorylation sites, the effect of immunosuppressive drugs in liver transplant patients, and how germline variants may affect phosphorylation rewiring by COVID infection.
+
 
 ![kc](/assets/images/Kevin.png){: height="175px" width="175px" style="float: right"}
 **Kevin Cheng** (graduate student). 
@@ -38,10 +43,12 @@ I am a PhD student in Computational Biology and Molecular Genetics at the Univer
 **Nina Adler** (summer student). 
 Prior to joining the lab in summer 2021, I graduated from the University of Toronto with a Bachelor's in Molecular Genetics and a Master's in Medical Genomics. I have a strong interest in cancer biomarker discovery, and my current project involves the exploration of an emerging target gene class as potential biomarkers for clinical outcomes.
 
+
 ![hs](/assets/images/Hasna.png){: height="175px" width="175px" style="float: right"}
 **Hasna Sultan** (visiting graduate student).
 I am a graduate student in the bioinformatics program at the University of Guelph. I am excited to be a part of the Reimand Lab for my master’s project and apply and build on my bioinformatics skills when working with complex omics datasets. For my project, I look forward to using machine learning models to elucidate some of the complexity behind driver mutations in cancer.
 
-![ms](/assets/images/bio-photo.jpg){: height="175px" width="175px" style="float: right"}
+
+![ms](/assets/images/Michael.png){: height="175px" width="175px" style="float: right"}
 **Michael Slobodyanyuk** (summer student). 
 I am a graduate student at the University of Toronto in the department of Medical Biophysics. I previously completed a MSc at the University of Ottawa, studying the structure-function relationship of ligand-gated ion channels using electrophysiology techniques. I'm interested in using an integrative approach to study large datasets of genomes, epigenomes, and transcriptomes, with the ultimate goal of identifying key pathways and genes implicated in cancer biology.
