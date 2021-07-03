@@ -23,7 +23,7 @@ Paper: [Zhu, Uuskula-Reimand, Isaev et al. Molecular Cell 2020](https://www.scie
 
 #### RM2
 
-RM2 is a method to characterize local mutational processes acting on families of genomic elements in cancer genomes. The negative binomial regression model in RM2 evaluates the frequency of somatic mutations in elements of interest relative to background mutation rates adjacent to the elements and also adjusts megabase-scale mutation frequencies as covariates. Optionally, the analysis considers clinical and genetic properties of the sequencing dataset to find their interactions with localized mutational processes.
+RM2 is a method to characterize local mutational processes acting on families of genomic elements in cancer genomes. The negative binomial regression model in RM2 evaluates the frequency of somatic mutations in such elements, relative to the background mutation rates in adjacent sequences and also adjusts megabase-scale mutation frequencies as covariates. Optionally, the analysis also considers clinical and genetic properties of the sequencing dataset to find their interactions with localized mutational processes.
 GitHub: [source code](https://github.com/reimandlab/RM2){:target="_blank"}.  
 Paper: [Lee, Abd-Rabbo, Reimand. Genome Biol 2021](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02318-x){:target="_blank"}.  
 [![RM2](/assets/images/research/RM2.001.png){: width="500px"}](/assets/images/research/RM2.001.png)
