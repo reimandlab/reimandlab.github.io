@@ -5,8 +5,8 @@ main:
     url: /posts/
   - title: "Team"
     url: /team/
-  - title: "Publications"
-    url: /publications/
+  - title: "Papers"
+    url: /papers/
   - title: "Research"
     url: /research/
   - title: "Software"
