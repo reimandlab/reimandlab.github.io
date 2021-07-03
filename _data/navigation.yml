@@ -1,14 +1,12 @@
 main:
-  - title: "About"
-    url: /about/
-  - title: "Posts"
+  - title: "News"
     url: /posts/
+  - title: "Research"
+    url: /research/
   - title: "Team"
     url: /team/
   - title: "Papers"
     url: /papers/
-  - title: "Research"
-    url: /research/
   - title: "Software"
     url: /software/
   - title: "Jobs"
