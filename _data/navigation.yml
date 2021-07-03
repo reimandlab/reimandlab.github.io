@@ -11,5 +11,7 @@ main:
     url: /research/
   - title: "Software"
     url: /software/
+  - title: "Jobs"
+    url: /jobs/    
   - title: "Contact us"
     url: /contact/
