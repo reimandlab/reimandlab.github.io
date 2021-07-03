@@ -4,15 +4,13 @@ title: "Contact us"
 ---
 
 **Jüri Reimand PhD**  
-Principal Investigator, Computational Biology Program, Ontario Institute for Cancer Research  
-Assistant Professor, Departments of Medical Biophysics and Molecular Genetics, University of Toronto  
-
+Principal investigator, Computational Biology Program, Ontario Institute for Cancer Research  
+Associate professor, Departments of Medical Biophysics and Molecular Genetics, University of Toronto  
 
 email: juri.reimand_AT_utoronto.ca (preferred)  
 email: juri.reimand_AT_oicr.on.ca  
 phone: +1 647 260 7983  
 twitter: @reimand  
-skype: juri.reimand  
 
 Ontario Institute for Cancer Research (OICR)  
 661 University Avenue, Suite 510  
