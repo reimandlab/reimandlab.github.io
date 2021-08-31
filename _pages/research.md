@@ -9,7 +9,7 @@ Our lab focuses on computational biology and cancer research. We analyze large g
 
 Cancer is a genetic disease caused by somatic mutations in the genome. Single nucleotide variants (SNVs) and other classes of mutations accumulate in the genome over time and through exposures to DNA-damaging agents. Most mutations have little consequence and are often called passengers, while a small minority of mutations called drivers affect critical genes in cells and cause aberrant activity of oncogenic and tumor suppresive pathways in cells.
 
-Recent research in the lab has focused on both driver mutations and passenger mutations in cancer cells. 
+Recent research in the lab has focused on both drivers and passengers in large whole-genome sequencing datasets.
 
 For driver mutations, we recently performed a systematic analysis of non-coding mutations in gene-regulatory regions and three-dimensional interaction hubs of the cancer genome using cancer whole-genome sequencing data. We found dozens of potential novel driver mutations and performed functional experiments with CRISPR genome editing and transcriptome-wide profiling to validate one non-coding region controlling the tumor suppressor gene CCNB1IP1. We developed the computational tool ActiveDriverWGS to enable such discovery. 
 
