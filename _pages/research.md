@@ -15,6 +15,11 @@ For driver mutations, we recently performed a systematic analysis of non-coding 
 
 [![FMRE_graphical_abstract](/assets/images/research/FMRE_graphical_abstract.png){: width="500px"}](/assets/images/research/FMRE_graphical_abstract.png)
 
+Candidate Cancer Driver Mutations in Distal Regulatory Elements and Long-Range Chromatin Interaction Networks.  
+Helen Zhu\*, Liis Uusküla-Reimand\*, Keren Isaev\*, .. , Jüri Reimand.  
+*Molecular Cell* 77 (6) 1307-1321. e10 (2020)  
+[link](https://www.sciencedirect.com/science/article/pii/S1097276519309578){:target="_blank"}.  
+
 
 #### Multi-omics data integration
 
