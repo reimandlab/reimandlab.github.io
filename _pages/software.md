@@ -31,7 +31,7 @@ Paper: [Lee, Abd-Rabbo, Reimand. Genome Biol 2021](https://genomebiology.biomedc
 
 #### ActiveDriverDB
 
-ActiveDriverDB is lorem ipsum.  
+ActiveDriverDB is a database for interpreting human genomic variation using cell signalling networks. We analyze missense SNVs (amino acid substitutions) that occur at post-translational modification sites (PTM sites, such as phosphorylation). Somatic cancer mutations, inherited disease mutations, and polymorphic variations in the human genome are included. We evaluate the impact of substitutions on kinase signalling networks by predicting whether the substitutions alter protein sequence motifs bound by kinases and potentially cause rewiring of signalling networks.
 Web server: [www.activeDriverDB.org](https://activedriverdb.org/).  
 GitHub: [source code](https://github.com/reimandlab/ActiveDriverDB){:target="_blank"}.  
 Original paper: [Krassowski et al. Nucleic Acids Res 2018](https://academic.oup.com/nar/article/46/D1/D901/4566599){:target="_blank"}.  
