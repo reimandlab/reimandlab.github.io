@@ -9,12 +9,12 @@ Highlighted papers of the major research areas of the lab are listed below. See 
 
 Functional and genetic determinants of mutation rate variability in regulatory elements of cancer genomes.  
 **Christian A Lee**\*, **Diala Abd-Rabbo**\*, **Jüri Reimand**.  
-*Genome Biology* 22 (1), 133 (2021)
+*Genome Biology* 22 (1), 133 (2021)  
 [link](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02318-x){:target="_blank"}.
 
 Chromatin accessibility of primary human cancers ties regional mutational processes with tissues of origin.  
 **Oliver Ocsenas**, **Jüri Reimand**.  
-*bioRxiv* 10.1101/2021.05.14.444202 (2021)
+*bioRxiv* 10.1101/2021.05.14.444202 (2021)  
 [link](https://www.biorxiv.org/content/10.1101/2021.05.14.444202v1){:target="_blank"}.  
 
 Candidate Cancer Driver Mutations in Distal Regulatory Elements and Long-Range Chromatin Interaction Networks.  
