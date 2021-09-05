@@ -26,7 +26,7 @@ Helen Zhu\*, Liis Uusküla-Reimand\*, Keren Isaev\*, .. , Jüri Reimand.
 
 Functional and genetic determinants of mutation rate variability in regulatory elements of cancer genomes.  
 Christian A Lee\*, Diala Abd-Rabbo\*, Jüri Reimand.  
-*Genome Biology* 22 (1), 133 (2021)
+*Genome Biology* 22 (1), 133 (2021)  
 [link](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02318-x){:target="_blank"}.
 
 
