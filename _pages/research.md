@@ -15,7 +15,7 @@ Recent research in the lab has focused on both drivers and passengers in large w
 
 [![FMRE_graphical_abstract](/assets/images/research/FMRE_graphical_abstract.png){: width="500px"}](/assets/images/research/FMRE_graphical_abstract.png)
 
-Candidate cancer driver mutations in distal regulatory elements and long-range chromatin interaction networks.  
+*Candidate cancer driver mutations in distal regulatory elements and long-range chromatin interaction networks.*  
 Helen Zhu\*, Liis Uusküla-Reimand\*, Keren Isaev\*, .. , Jüri Reimand.  
 *Molecular Cell* 77 (6) 1307-1321. e10 (2020)  
 [link](https://www.sciencedirect.com/science/article/pii/S1097276519309578){:target="_blank"}.  
@@ -24,7 +24,7 @@ Helen Zhu\*, Liis Uusküla-Reimand\*, Keren Isaev\*, .. , Jüri Reimand.
 
 [![RM2_figure.png](/assets/images/research/RM2_figure.png){: width="500px"}](/assets/images/research/RM2_figure.png)
 
-Functional and genetic determinants of mutation rate variability in regulatory elements of cancer genomes.  
+*Functional and genetic determinants of mutation rate variability in regulatory elements of cancer genomes.*  
 Christian A Lee\*, Diala Abd-Rabbo\*, Jüri Reimand.  
 *Genome Biology* 22 (1), 133 (2021)  
 [link](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02318-x){:target="_blank"}.
@@ -36,9 +36,9 @@ High-throughput omics techniques allow researchers to profile all molecules in c
 
 Our lab develops computational tools for multi-omics data integration. We use statistical techniques such as data fusion to jointly analyze multi-omics datasets and prioritize genes, proteins and other features through these datasets. A central tenet of such multi-omics data integration is that important molecular signals detected in multiple datasets should converge to biological pathways and processes. 
 
-Our recently developed method ActivePathways [link](https://github.com/reimandlab/ActivePathways){:target="_blank"} combines multiple omics datasets representing either same omics type (e.g., RNA-seq) or multiple types (e.g., RNA-seq and proteomics). ActivePathways prioritizes genes and/or proteins based on their significance in individual datasets, giving a higher score to those genes/proteins that are standing out in multiple datasets. Pathway enrichment analysis of prioritized genes reveals pathways and processes characteristic of these genes, and also shows which of the input datasets contributes to the discovery of each pathway. These complex analyses are often best visualized as enrichment maps. Enrichment maps are network-based visualizations showing groups of similar pathways as subnetworks that are colored by the type of multi-omics evidence underlying the pathways. 
+Our recently developed method [ActivePathways](https://github.com/reimandlab/ActivePathways){:target="_blank"} combines multiple omics datasets representing either same omics type (e.g., RNA-seq) or multiple types (e.g., RNA-seq and proteomics). ActivePathways prioritizes genes and/or proteins based on their significance in individual datasets, giving a higher score to those genes/proteins that are standing out in multiple datasets. Pathway enrichment analysis of prioritized genes reveals pathways and processes characteristic of these genes, and also shows which of the input datasets contributes to the discovery of each pathway. These complex analyses are often best visualized as enrichment maps. Enrichment maps are network-based visualizations showing groups of similar pathways as subnetworks that are colored by the type of multi-omics evidence underlying the pathways. 
 
-Integrative pathway enrichment analysis of multivariate omics data.  
+*Integrative pathway enrichment analysis of multivariate omics data.*  
 Marta Paczkowska\*, Jonathan Barenboim\*, Nardnisa Sintupisut, Natalie S Fox, Helen Zhu, Diala Abd-Rabbo, Miles W Mee, Paul C Boutros, PCAWG Drivers and Functional Interpretation Working Group, PCAWG Consortium, Jüri Reimand.  
 *Nature Communications* 11 (1), 735 (2021)  
 [link](https://www.nature.com/articles/s41467-019-13983-9){:target="_blank"}.
@@ -47,9 +47,9 @@ In the example below, we jointly analyzed whole-genome sequencing data of human 
 
 [![APW_example-01.png](/assets/images/research/APW_example-01.png){: width="500px"}](/assets/images/research/APW_example-01.png)
 
-We published a comprehensive protocol paper on pathway enrichment analysis of omics datasets in collaboration with Gary Bader's lab at University of Toronto. This includes a literature review of pathway analysis of omics data, best practices and current challenges, as well as step-by-step protocols for common pathway enrichment analysis and data visualization. 
+We published a comprehensive protocol paper on pathway enrichment analysis of omics datasets in collaboration with Gary Bader's lab (University of Toronto). The paper includes a literature review of pathway analysis of omics data, best practices and current challenges, as well as step-by-step workflows for pathway enrichment analysis and data visualization. 
 
-Pathway enrichment analysis and visualization of omics data using g:Profiler, GSEA, Cytoscape and EnrichmentMap.  
+*Pathway enrichment analysis and visualization of omics data using g:Profiler, GSEA, Cytoscape and EnrichmentMap.*  
 Jüri Reimand\*, Ruth Isserlin\*, Veronique Voisin, Mike Kucera, Christian Tannus-Lopes, Asha Rostamianfar, Lina Wadi, Mona Meyer, Jeff Wong, Changjiang Xu, Daniele Merico & Gary D. Bader.  
 *Nature Protocols* 14, 482-517 (2019)  
 [link](https://www.nature.com/articles/s41596-018-0103-9){:target="_blank"}.
