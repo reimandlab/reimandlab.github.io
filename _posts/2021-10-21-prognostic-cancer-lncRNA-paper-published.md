@@ -7,3 +7,6 @@ tags:
 ---
 
 Our pan-cancer study of lncRNAs is now published at [Cell Reports][paper_link]{:target="_blank"}! 
+
+
+[paper_link]: https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01340-1
