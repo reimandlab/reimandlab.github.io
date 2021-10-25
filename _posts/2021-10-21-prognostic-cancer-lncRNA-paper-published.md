@@ -10,7 +10,7 @@ Our pan-cancer study of lncRNAs is now published at [Cell Reports][paper_link]{:
 
 See also: [Tweet Thread][TweetThread]{:target="_blank"}
 
-[![lncRNA_study_overview](/assets/images/lncRNA_CellRep_GA.png){: width="500px"}](/assets/images/lncRNA_CellRep_GA.png)
+[![lncRNA_study_overview](/assets/images/research/lncRNA_CellRep_GA.png){: width="500px"}](/assets/images/research/lncRNA_CellRep_GA.png)
 
 [paper_link]: https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01340-1
 [TweetThread]: https://twitter.com/reimand/status/1452658568776327177 
