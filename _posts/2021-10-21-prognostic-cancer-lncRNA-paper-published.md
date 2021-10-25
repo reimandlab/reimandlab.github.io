@@ -1,13 +1,15 @@
----
-title: "Pan-cancer analysis of non-coding transcripts reveals the prognostic onco-lncRNA HOXA10-AS in gliomas published"
+x---
+title: "New publication: Pan-cancer analysis of non-coding transcripts reveals the prognostic onco-lncRNA HOXA10-AS in gliomas"
 categories:
   - news
 tags:
   - publications
 ---
 
-Pan-cancer analysis of lncRNAs reveals prognostic transcripts with characteristic switch-like expression and a landscape of functional and pathway associations, published in [Cell Reports][paper_link]{:target="_blank"}.  Detailed experimental and clinical validation highlights the oncolncRNA HOXA10-AS whose activation in glioma associates with poor patient prognosis and cell proliferation and invasion phenotypes in cell lines, xenografts, and organoids.
+Our pan-cancer study of lncRNAs is now published at [Cell Reports][paper_link]. We used a machine learning approach to find prognostic long non-coding RNAs in cancer and characterized the onco-lncRNA HOXA10-AS i detail as a prognostic marker in brain cancers (gliomas). HOXA10-AS appears as a potent oncogene as it regulates cell proliferation, invasion and contact inhibition in functional experiments with cancer cell lines, xenograft and organoid models. The study was co-led by Karina Isaev, a former graduate student of our lab with [MBP][MBP]{:target="_blank"}, and great collaboration with Lingyan Jiang and Daniel Schramek et al. at the Lunenfeld-Tanenbaum Research Institute. We collaborated with Shuai Wu and colleagues at Huashan Hospital in Shanghai, China for additional validation of the HOXA10-AS marker in a retrospective cohort of glioma patients. See also: [Tweet Thread][TweetThread]{:target="_blank"}
 
+[![lncRNA_study_overview](/assets/images/lncRNA_CellRep_GA.png){: width="500px"}](/assets/images/lncRNA_CellRep_GA.png)
 
 [paper_link]: https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01340-1
-
+[TweetThread]: https://twitter.com/reimand/status/1452658568776327177 
+[MBP]: https://medbio.utoronto.ca/medical-biophysics 
