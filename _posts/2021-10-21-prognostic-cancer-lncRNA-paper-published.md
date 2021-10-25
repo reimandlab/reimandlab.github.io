@@ -6,7 +6,9 @@ tags:
   - publications
 ---
 
-Our pan-cancer study of lncRNAs is now published at [Cell Reports][paper_link]. We used a machine learning approach to find prognostic long non-coding RNAs in cancer and characterized the onco-lncRNA HOXA10-AS i detail as a prognostic marker in brain cancers (gliomas). HOXA10-AS appears as a potent oncogene as it regulates cell proliferation, invasion and contact inhibition in functional experiments with cancer cell lines, xenograft and organoid models. The study was co-led by Karina Isaev, a former graduate student of our lab with [MBP][MBP]{:target="_blank"}, and great collaboration with Lingyan Jiang and Daniel Schramek et al. at the Lunenfeld-Tanenbaum Research Institute. We collaborated with Shuai Wu and colleagues at Huashan Hospital in Shanghai, China for additional validation of the HOXA10-AS marker in a retrospective cohort of glioma patients. See also: [Tweet Thread][TweetThread]{:target="_blank"}
+Our pan-cancer study of lncRNAs is now published at [Cell Reports][paper_link]{:target="_blank"}. We used a machine learning approach to find prognostic long non-coding RNAs in cancer and characterized the onco-lncRNA HOXA10-AS in detail as a prognostic marker in brain cancers (gliomas). HOXA10-AS appears as a potent oncogene as it regulates cell proliferation, invasion and contact inhibition in functional experiments with cancer cell lines, xenograft and organoid models. The study was co-led by Karina Isaev, a former graduate student of our lab with [MBP][MBP]{:target="_blank"}, and Lingyan Jiang and Daniel Schramek et al. at the Lunenfeld-Tanenbaum Research Institute. We also collaborated with Shuai Wu and colleagues at the Huashan Hospital in Shanghai, China for additional validation of the HOXA10-AS marker in a retrospective cohort of glioma patients.  
+
+See also: [Tweet Thread][TweetThread]{:target="_blank"}
 
 [![lncRNA_study_overview](/assets/images/lncRNA_CellRep_GA.png){: width="500px"}](/assets/images/lncRNA_CellRep_GA.png)
 
