@@ -75,8 +75,8 @@ On the one hand, the lncRNA HOXA10-AS appears as a potent onco-lncRNA and a pote
 On the other hand, the lncRNA expression helps identify high-risk tumors that associate with poor patient prognosis, as observed in the cohort of brain cancers from TCGA we used for model training, as well as another patient cohort from our collaborators at the Huashan Hospital that we used for model validation. 
 
 *Pan-cancer analysis of non-coding transcripts reveals the prognostic onco-lncRNA HOXA10-AS in gliomas.*  
-Keren Isaev\*, Lingyan Jiang\*, Shuai Wu\*, Christian A. Lee, Valérie Watters, Victoire Fort, Ricky Tsai, Fiona J. Coutinho, Samer M.I. Hussein, Jie Zhang, Jinsong Wu, Peter B. Dirks, Daniel Schramek\*, Jüri Reimand\*
-*Cell Reports* 37 (3), 109873 (2021)  
+Keren Isaev\*, Lingyan Jiang\*, Shuai Wu\*, Christian A. Lee, Valérie Watters, Victoire Fort, Ricky Tsai, Fiona J. Coutinho, Samer M.I. Hussein, Jie Zhang, Jinsong Wu, Peter B. Dirks, Daniel Schramek\*, Jüri Reimand\*.  
+*Cell Reports* 37 (3), 109873 (2021).  
 [link](https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01340-1){:target="_blank"}.
 
 
