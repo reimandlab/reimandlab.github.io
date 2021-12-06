@@ -41,7 +41,7 @@ Impact of outdated gene annotations on pathway enrichment analysis.
 
 ### cancer biomarker and drug target discovery
 
-Comprehensive analysis of lncRNAs reveals candidate prognostic biomarkers in multiple cancer types.  
-**Keren Isaev**, **Lingyan Jiang**, **Christian A Lee**, Ricky Tsai, Fiona Coutinho, Peter B Dirks, **Daniel Schramek**, **Jüri Reimand**.  
-*bioRxiv*, 861039, doi.org/10.1101/861039 (2019)  
-[link](https://www.biorxiv.org/content/10.1101/861039v1.abstract){:target="_blank"}.  
+Pan-cancer analysis of non-coding transcripts reveals the prognostic onco-lncRNA HOXA10-AS in gliomas.  
+**Keren Isaev**\*, Lingyan Jiang\*, Shuai Wu\*, **Christian A Lee**, Valerie Watters, Victoire Fort, Ricky Tsai, Fiona Coutinho, Samer M I Hussein, Jie Zhang, Jinsong Wu, Peter B Dirks, Daniel Schramek\*, **Jüri Reimand**\*.  
+*Cell Reports*, Vol 37, Issue 3, 109873, (2021)
+[link](https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01340-1){:target="_blank"}.  
