@@ -3,13 +3,6 @@ main:
     url: /posts/
   - title: "Research"
     url: /research/
-    subfolderitems:
-      - title: "multiomics"
-        url: /research_multiomics/
-      - title: "drivers and passengers"
-        url: /research_drivers_passengers/
-      - title: "biomarkers and targets"
-        url: /research_biomarkers_targets/
   - title: "Team"
     url: /team/
   - title: "Papers"
