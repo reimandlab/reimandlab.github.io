@@ -2,6 +2,7 @@ main:
   - title: "News"
     url: /posts/
   - title: "Research"
+    url: /research/
     subfolderitems:
       - title: "multiomics"
         url: /research_multiomics/
