@@ -1,8 +1,12 @@
 main:
   - title: "News"
     url: /posts/
-  - title: "Research"
-    url: /research/
+  - title: "Drivers & passengers"
+    url: /research_drivers_passengers/
+  - title: "Multiomics integration"
+    url: /research_multiomics/
+  - title: "Biomarkers & targets"
+    url: /research_biomarkers_targets/
   - title: "Team"
     url: /team/
   - title: "Papers"
