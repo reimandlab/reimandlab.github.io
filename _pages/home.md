@@ -20,9 +20,9 @@ feature_row:
     btn_label: "Learn more"
   - image_path: /assets/images/mm-responsive-feature.png
     alt: "research"
-    title: "Research"
-    excerpt: "Overview of research projects"
-    url: "/research/"
+    title: "Research - DP"
+    excerpt: "DP"
+    url: "/research/#drivers--passengers-of-the-cancer-genome"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/mm-free-feature.png
