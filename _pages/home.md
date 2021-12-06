@@ -25,7 +25,7 @@ feature_row:
     url: "/research/#multi-omics-data-integration"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/drivers_passengers_icon_v1-01.png
+  - image_path: /assets/images/biomarker_tgt_icon_v1-01.png
     alt: "Biomarker and target discovery"
     title: "Biomarker and target discovery"
     excerpt: "Biomarker and target discovery"
