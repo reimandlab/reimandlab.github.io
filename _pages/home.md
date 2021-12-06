@@ -11,25 +11,25 @@ excerpt: >
   University of Toronto <br />
   Toronto, ON, Canada
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
-    alt: "News & blog"
-    title: "News & blog"
-    excerpt: "Recent updates, news and publications"
-    url: "/posts/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
   - image_path: /assets/images/mm-responsive-feature.png
-    alt: "research"
-    title: "Research - DP"
-    excerpt: "DP"
+    alt: "Cancer drivers and passengers"
+    title: "Cancer drivers and passengers"
+    excerpt: "Cancer drivers and passengers"
     url: "/research/#drivers--passengers-of-the-cancer-genome"
     btn_class: "btn--primary"
     btn_label: "Learn more"
+  - image_path: /assets/images/mm-customizable-feature.png
+    alt: "Multi-omics data integration"
+    title: "Multi-omics data integration"
+    excerpt: "Multi-omics data integration"
+    url: "/research/#multi-omics-data-integration"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
   - image_path: /assets/images/mm-free-feature.png
-    alt: "contact us"
-    title: "contact us"
-    excerpt: ""
-    url: "/contact/"
+    alt: "Biomarker and target discovery"
+    title: "Biomarker and target discovery"
+    excerpt: "Biomarker and target discovery"
+    url: "/research/#biomarker--target-discovery"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
