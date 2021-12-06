@@ -2,7 +2,6 @@ main:
   - title: "News"
     url: /posts/
   - title: "Research"
-    url: /research/
       - page: multiomics
         url: /research_multiomics/
       - page: drivers and passengers
