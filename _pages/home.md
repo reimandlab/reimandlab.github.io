@@ -18,7 +18,7 @@ feature_row:
     url: "/research/#drivers--passengers-of-the-cancer-genome"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /assets/images/drivers_passengers_icon_v1-01.png
     alt: "Multi-omics data integration"
     title: "Multi-omics data integration"
     excerpt: "Multi-omics data integration"
