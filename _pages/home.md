@@ -11,7 +11,7 @@ excerpt: >
   University of Toronto <br />
   Toronto, ON, Canada
 feature_row:
-  - image_path: /assets/images/drivers_passengers_icon_v1-01.png
+  - image_path: /assets/images/drivers_passengers_icon_v2-01.png
     alt: "Cancer drivers and passengers"
     title: "Cancer drivers and passengers"
     excerpt: "Cancer drivers and passengers"
