@@ -3,6 +3,12 @@ main:
     url: /posts/
   - title: "Research"
     url: /research/
+      - page: multiomics
+        url: /research_multiomics/
+      - page: drivers & passengers
+        url: /research_drivers_passengers/
+      - page: biomarkers & targets
+        url: /research_biomarkers_targets/
   - title: "Team"
     url: /team/
   - title: "Papers"
