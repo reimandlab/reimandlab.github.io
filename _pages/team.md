@@ -35,15 +35,15 @@ Prior to joining the lab in summer 2021, I graduated from the University of Toro
 
 
 ![ms](/assets/images/Michael.png){: height="175px" width="175px" style="float: right"}
-**Michael Slobodyanyuk** (summer student). 
+**Michael Slobodyanyuk** (graduate student). 
 I am a graduate student at the University of Toronto in the department of Medical Biophysics. I previously completed a MSc at the University of Ottawa, studying the structure-function relationship of ligand-gated ion channels using electrophysiology techniques. I'm interested in using an integrative approach to study large datasets of genomes, epigenomes, and transcriptomes, with the ultimate goal of identifying key pathways and genes implicated in cancer biology.
 
 
 ![oo](/assets/images/Oliver.png){: height="175px" width="175px" style="float: right"}
-**Oliver Ocsenas** (bioinformatician).
-I am a MSc. graduate from the University of Toronto, Department of Medical Biophysics, and I recently started a job as a data scientist in a consulting company. I continue in the lab as a contributor to finish a manuscript from my graduate studies. I received a BSc. from the University of Toronto, Department of Physics in the Biological Physics Specialist program. My master's project focuses on investigating the associations between chromatin accessibility and regional mutation frequency in cancer. Chromatin accessibility is a strong predictor of regional mutation rates and we can use this association to better understand tissue of origin, mutational timing, and mutational processes in cancer. We use machine learning models such as random forest to elucidate these relationships and make inferences. My research interests include machine learning, mutational processes in cancer, epigenomics, and how normal cells transform and undergo oncogenesis. 
+**Oliver Ocsenas** (contributor).
+I am a recent MSc. graduate from the University of Toronto, Department of Medical Biophysics, and I recently started a job as a data scientist at a consulting company. I continue in the lab as a contributor to finish a manuscript from my graduate studies. I received a BSc. from the University of Toronto, Department of Physics in the Biological Physics Specialist program. My master's project focuses on investigating the associations between chromatin accessibility and regional mutation frequency in cancer. Chromatin accessibility is a strong predictor of regional mutation rates and we can use this association to better understand tissue of origin, mutational timing, and mutational processes in cancer. We use machine learning models such as random forest to elucidate these relationships and make inferences. My research interests include machine learning, mutational processes in cancer, epigenomics, and how normal cells transform and undergo oncogenesis. 
 
 
 ![cal](/assets/images/Christian.png){: height="175px" width="175px" style="float: right"}
-**Christian Lee** (graduate student).
+**Christian Lee** (contributor).
 I am a recent MSc. graduate from the University of Toronto, Department of Medical Biophysics, and I recently started my medical studies. I continue in the lab as a contributor to finish a manuscript from my graduate studies. I grew up in California and moved to Toronto for my undergraduate studies. There, I developed an interest in genome and computational biology, which led me to graduate studies in Medical Biophysics. Broadly, I am interested in the interaction and integration of multi-level omics data. More recently, my work has focused on analyzing patterns of differential mutation frequencies across functional elements in cancer genomes. 
