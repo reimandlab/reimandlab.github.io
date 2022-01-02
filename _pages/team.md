@@ -30,13 +30,18 @@ I am a PhD student in Computational Biology and Molecular Genetics at the Univer
 
 
 ![na](/assets/images/NA2.jpg){: height="175px" width="175px" style="float: right"}
-**Nina Adler** (summer student). 
+**Nina Adler** (student). 
 Prior to joining the lab in summer 2021, I graduated from the University of Toronto with a Bachelor's in Molecular Genetics and a Master's in Medical Genomics. I have a strong interest in cancer biomarker discovery, and my current project involves the exploration of an emerging target gene class as potential biomarkers for clinical outcomes.
 
 
 ![ms](/assets/images/Michael.png){: height="175px" width="175px" style="float: right"}
 **Michael Slobodyanyuk** (graduate student). 
 I am a graduate student at the University of Toronto in the department of Medical Biophysics. I previously completed a MSc at the University of Ottawa, studying the structure-function relationship of ligand-gated ion channels using electrophysiology techniques. I'm interested in using an integrative approach to study large datasets of genomes, epigenomes, and transcriptomes, with the ultimate goal of identifying key pathways and genes implicated in cancer biology.
+
+
+![ms](/assets/images/Zoe.png){: height="175px" width="175px" style="float: right"}
+**Zoe Klein** (graduate student). 
+I received my BSc with an honours specialization in genetics from Western University, where I developed an interest in bioinformatics and computational biology. I am currently a graduate student at the Department of Molecular Genetics at the University of Toronto. In the Reimand lab, I am using computational tools to investigate the role of non-coding RNAs in cancer.
 
 
 ![oo](/assets/images/Oliver.png){: height="175px" width="175px" style="float: right"}
