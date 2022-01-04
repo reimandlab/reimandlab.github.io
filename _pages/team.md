@@ -39,9 +39,14 @@ Prior to joining the lab in summer 2021, I graduated from the University of Toro
 I am a graduate student at the University of Toronto in the department of Medical Biophysics. I previously completed a MSc at the University of Ottawa, studying the structure-function relationship of ligand-gated ion channels using electrophysiology techniques. I'm interested in using an integrative approach to study large datasets of genomes, epigenomes, and transcriptomes, with the ultimate goal of identifying key pathways and genes implicated in cancer biology.
 
 
-![ms](/assets/images/Zoe.png){: height="175px" width="175px" style="float: right"}
+![zk](/assets/images/Zoe.png){: height="175px" width="175px" style="float: right"}
 **Zoe Klein** (graduate student). 
 I received my BSc with an honours specialization in genetics from Western University, where I developed an interest in bioinformatics and computational biology. I am currently a graduate student at the Department of Molecular Genetics at the University of Toronto. In the Reimand lab, I am using computational tools to investigate the role of non-coding RNAs in cancer.
+
+
+![mm](/assets/images/Masoom.png){: height="175px" width="175px" style="float: right"}
+**Masoom Mohammad** (graduate student). 
+I am a graduate student in the Department of Molecular Genetics at the University of Toronto. Prior to joining the Reimand lab, I completed my undergraduate degree in Molecular Biology (UofT). I'm interested in using machine learning methods in the context of non-coding cancer driver mutations.
 
 
 ![oo](/assets/images/Oliver.png){: height="175px" width="175px" style="float: right"}
