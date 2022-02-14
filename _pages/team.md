@@ -49,7 +49,7 @@ I received my BSc with an honours specialization in genetics from Western Univer
 I am a graduate student in the Department of Molecular Genetics at the University of Toronto. Prior to joining the Reimand lab, I completed my undergraduate degree in Molecular Biology (UofT). I'm interested in using machine learning methods in the context of non-coding cancer driver mutations.
 
 
-![kg](/assets/images/Kissy.jpg){: height="175px" width="175px" style="float: right"}
+![kg](/assets/images/Kissy.png){: height="175px" width="175px" style="float: right"}
 **Kissy Guevara-Hoyer** (visiting researcher).
 I am an MD specialist in Clinical Immunology at the Hospital Clinico San Carlos in Madrid, Spain, where I am responsible for the emerging Research Unit on Immunomonitoring of Cancer and Immune-mediated diseases. I completed a PhD in Biomedical Research at the Complutense University of Madrid, Spain in 2020. Currently I am pursuing a master’s degree in Bioinformatics and Biostatistics from the University of Barcelona (UOC/UB). My research focuses on the crossroads between cancer and primary immunodeficiency using computational tools and predictive algorithms to analyze the mutational and expression signatures underlying common biologic processes and biomarkers shared by these diseases. 
 
