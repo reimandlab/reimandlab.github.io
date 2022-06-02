@@ -10,7 +10,7 @@ On our recent study of human genetic variation affecting the phosphorylation sig
 
 [![news_CPTM](/assets/images/research/CPTM_graphical_abstract.png){: width="500px"}](/assets/images/research/CPTM_graphical_abstract.png)
 
-The phosphorylation-associated SNVs (pSNVs) are enriched in cellular pathways involved in virus life cycle such as alternative splicing, innate immune response, protein-protein interaction networks of host and virus proteins, as well as pathways involved in human comorbidities of COVID-19 (such as diabetes). We found several pSNVs that associate with severe COVID19 disease risk and hospitalization, including one variant with a potential protective effect. A subset of pSNVs created binding sites of the TBK1 kinase involved in immune response by replacing motifs of mitotic kinases (MAPKs, CDKs), indicating evolution of defense responses in human genomes. 
+The phosphorylation-associated SNVs (pSNVs) are enriched in cellular pathways involved in virus life cycle such as alternative splicing, innate immune response, protein-protein interaction networks of host and virus proteins, as well as pathways involved in human comorbidities of COVID-19 (such as diabetes). We found several pSNVs that associate with severe COVID-19 disease risk and hospitalization, including one variant with a potential protective effect. A subset of pSNVs created binding sites of the TBK1 kinase involved in immune response by replacing motifs of mitotic kinases (MAPKs, CDKs), indicating evolution of defense responses in human genomes. 
 
 The study was co-led by two members our lab: Diogo Pellegrina, a postdoctoral researcher, and Alec Bahcheli, a graduate student of the [Molecular Genetics Department][MoGen]{:target="_blank"} of University of Toronto.
 
