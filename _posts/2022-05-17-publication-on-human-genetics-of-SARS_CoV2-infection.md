@@ -16,11 +16,10 @@ These phosphorylation-associated SNVs (pSNVs) are enriched in cellular pathways 
 The study was co-led by two members our lab: Diogo Pellegrina, a postdoctoral researcher, and Alec Bahcheli, a graduate student of the [Molecular Genetics Department][MoGen]{:target="_blank"} of University of Toronto.
 
 (1) Human phospho‐signaling networks of SARS‐CoV‐2 infection are rewired by population genetic variants
-D Pellegrina\*, AT Bahcheli\*, M Krassowski, J Reimand. (2022). Molecular Systems Biology 18 (5), e10823. [MSB_link]
+D Pellegrina\*, AT Bahcheli\*, M Krassowski, J Reimand. (2022). Molecular Systems Biology 18 (5), e10823. [link][MSB_link]{:target="_blank"}
 
 (2) MIMP: predicting the impact of mutations on kinase-substrate phosphorylation. O Wagih, J Reimand\
-*, GD Bader\*. (2015) Nature methods 12 (6), 531-533. [MIMP_link]
-
+*, GD Bader\*. (2015) Nature methods 12 (6), 531-533. [link][MIMP_link]{:target="_blank"}
 
 [MSB_link]: https://www.embopress.org/doi/full/10.15252/msb.202110823
 [MoGen]: https://moleculargenetics.utoronto.ca/

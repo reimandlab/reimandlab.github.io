@@ -10,7 +10,7 @@ A new study on local mutational processes in cancer genomes is now published in 
 
 See also: [Tweet Thread][TweetThread]{:target="_blank"} and [OICR News][OICRnews]{:target="_blank"}
 
-[![news_CA2M](/assets/images/news_RM2.png){: width="500px"}](/assets/images/news_RM2.png)
+[![news_RM2](/assets/images/news_RM2.png){: width="500px"}](/assets/images/news_RM2.png)
 
 
 
