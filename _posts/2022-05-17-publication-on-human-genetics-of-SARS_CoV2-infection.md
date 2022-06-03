@@ -7,7 +7,7 @@ tags:
 ---
 
 On our recent proteogenomics study of SARS-CoV-2 infection is now published in [Molecular Systems Biology][MSB_link]{:target="_blank"} (1). We analysed human genetic variation affecting the phosphorylation signaling networks activated in virus infection using our previously developed machine learning approach ([MIMP][MIMP]{:target="_blank"}
-(2)) to identify protein-coding variants (SNVs, single nucleotide variants) in human genomes that rewire signaling networks of SARS-CoV-2 infection by altering protein sequence motifs bound by kinases. 
+(2)). MIMP identified protein-coding variants (SNVs, single nucleotide variants) in human genomes that rewire signaling networks of SARS-CoV-2 infection by altering protein sequence motifs bound by kinases. 
 
 [![news_CPTM](/assets/images/research/CPTM_graphical_abstract.png){: width="500px"}](/assets/images/research/CPTM_graphical_abstract.png)
 
