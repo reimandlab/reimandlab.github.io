@@ -5,7 +5,7 @@ title: "Papers"
 
 Highlighted papers of the major research areas of the lab are listed below. See the full list of publications in the [Google Scholar](https://scholar.google.ca/citations?hl=en&user=hy4bI4UAAAAJ&view_op=list_works&sortby=pubdate){:target="_blank"} profile. Asterisk (\*) indicates co-first and co-corresponding authorships. Current and former lab members are shown in bold.
 
-### cancer drivers and passengers
+# cancer drivers and passengers
 
 Functional and genetic determinants of mutation rate variability in regulatory elements of cancer genomes.  
 **Christian A Lee**\*, **Diala Abd-Rabbo**\*, **Jüri Reimand**.  
@@ -22,7 +22,12 @@ Candidate Cancer Driver Mutations in Distal Regulatory Elements and Long-Range C
 *Molecular Cell* 77 (6) 1307-1321. e10 (2020)  
 [link](https://www.sciencedirect.com/science/article/pii/S1097276519309578){:target="_blank"}.  
 
-### multi-omics data integration, pathways and networks 
+# multi-omics data integration, pathways and networks 
+
+Human phospho‐signaling networks of SARS‐CoV‐2 infection are rewired by population genetic variants.  
+**Diogo Pellegrina**\*, **Alexander T Bahcheli**\*, Michal Krassowski, **Jüri Reimand**
+*Molecular Systems Biology* 18 (5), Article number: e10823 (2022)  
+[link](https://www.embopress.org/doi/full/10.15252/msb.202110823){:target="_blank"}.  
 
 Integrative pathway enrichment analysis of multivariate omics data.  
 **Marta Paczkowska**\*, **Jonathan Barenboim**\*, **Nardnisa Sintupisut**, Natalie S Fox, **Helen Zhu**, **Diala Abd-Rabbo**, **Miles W Mee**, Paul C Boutros, PCAWG Drivers and Functional Interpretation Working Group, **Jüri Reimand**, PCAWG Consortium.  
@@ -39,7 +44,7 @@ Impact of outdated gene annotations on pathway enrichment analysis.
 *Nature Methods* 13 (9), 705-706 (2016)  
 [link](https://www.nature.com/articles/nmeth.3963){:target="_blank"}.  
 
-### cancer biomarker and drug target discovery
+# cancer biomarker and drug target discovery
 
 Pan-cancer analysis of non-coding transcripts reveals the prognostic onco-lncRNA HOXA10-AS in gliomas.  
 **Keren Isaev**\*, Lingyan Jiang\*, Shuai Wu\*, **Christian A Lee**, Valerie Watters, Victoire Fort, Ricky Tsai, Fiona Coutinho, Samer M I Hussein, Jie Zhang, Jinsong Wu, Peter B Dirks, Daniel Schramek\*, **Jüri Reimand**\*.  
