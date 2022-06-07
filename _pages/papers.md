@@ -25,7 +25,7 @@ Candidate Cancer Driver Mutations in Distal Regulatory Elements and Long-Range C
 # multi-omics data integration, pathways and networks 
 
 Human phospho‐signaling networks of SARS‐CoV‐2 infection are rewired by population genetic variants.  
-**Diogo Pellegrina**\*, **Alexander T Bahcheli**\*, Michal Krassowski, **Jüri Reimand**
+**Diogo Pellegrina**\*, **Alexander T Bahcheli**\*, Michal Krassowski, **Jüri Reimand**.  
 *Molecular Systems Biology* 18 (5), Article number: e10823 (2022)  
 [link](https://www.embopress.org/doi/full/10.15252/msb.202110823){:target="_blank"}.  
 
