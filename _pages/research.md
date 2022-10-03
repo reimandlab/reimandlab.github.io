@@ -30,12 +30,20 @@ Christian A Lee\*, Diala Abd-Rabbo\*, Jüri Reimand.
 [link](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02318-x){:target="_blank"}.
 
 
-In another [study][https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010393]{:target="_blank"}, we dissected mutational processes in cancer genomes and their epigenetic associations with tumor tissue of origin. Using a machine learning approach and a compendium of ~900 genome-wide epigenetic tracks of primary cancers and normal tissues, we predicted megabase-scale mutation rates in ~2400 whole cancer genomes and asked which epigenetic predictors contributed the most to somatic mutation burden and mutational signatures. We found that the epigenomes of primary cancers, rather than those of normal tissues, are the predominant predictors of somatic mutations in most cancer types in intricate tissue-specific associations: for example, somatic mutations in breast cancer genomes were most predictable by the epigenomes of primary human breast cancers, while normal breast epigenomes were not significant predictors. This suggests that the mutational landscape of cancer genomes is more strongly determined by the cancer-specific chromatin environment that occurs after transformation of normal cells to cancer cells. The analysis also revealed a landscape of epigenetic associations with mutational processes, where certain signatures were more strongly driven by the epigenomes, especially carcinogenic signatures and signatures of unknown origin. Lastly, we demonstrated that the epigenome-informed models can point out regions with known and putative driver mutations, as epigenomes explain a large fraction of the genomic variation, thus any regions with over-represented mutations exceeding these machine learning driven predictors.  
+**In another [study](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010393){:target="_blank"} of passenger mutations **, we dissected mutational processes in cancer genomes and their epigenetic associations with tumor tissue of origin. Using a machine learning approach and a compendium of ~900 genome-wide epigenetic tracks of primary cancers and normal tissues, we predicted megabase-scale mutation rates in ~2400 whole cancer genomes and asked which epigenetic predictors contributed the most to somatic mutation burden and mutational signatures. 
+
+We found that the epigenomes of primary cancers, rather than those of normal tissues, are the predominant predictors of somatic mutations in most cancer types in intricate tissue-specific associations: for example, somatic mutations in breast cancer genomes were most predictable by the epigenomes of primary human breast cancers, while normal breast epigenomes were not significant predictors. This suggests that the mutational landscape of cancer genomes is more strongly determined by the cancer-specific chromatin environment that occurs after transformation of normal cells to cancer cells. 
+
+The analysis also revealed a landscape of epigenetic associations with mutational processes, where certain signatures were more strongly driven by the epigenomes, especially carcinogenic signatures and signatures of unknown origin. 
+
+Lastly, we demonstrated that the epigenome-informed models can point out regions with known and putative driver mutations, as epigenomes explain a large fraction of the genomic variation, thus any regions with over-represented mutations exceeding these machine learning driven predictors.  
 
 [![news_CA2M](/assets/images/research/CA2M_overview.png){: width="500px"}](/assets/images/research/CA2M_overview.png)
 
-*Chromatin accessibility of primary human cancers ties regional mutational processes and signatures with tissues of origin.*
-Oliver Ocsenas, Jüri Reimand. (2022) PLOS Computational Biology Aug 10;18(8):e1010393 (2022). [paper][PCB_link]{:target="_blank"}
+*Chromatin accessibility of primary human cancers ties regional mutational processes and signatures with tissues of origin.*  
+Oliver Ocsenas, Jüri Reimand.  
+*PLOS Computational Biology* Aug 10;18(8):e1010393 (2022).  
+[paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010393){:target="_blank"}
 
 
 
