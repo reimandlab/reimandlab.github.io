@@ -14,12 +14,12 @@ Functional and genetic determinants of mutation rate variability in regulatory e
 
 Chromatin accessibility of primary human cancers ties regional mutational processes with tissues of origin.  
 **Oliver Ocsenas**, **Jüri Reimand**.  
-*bioRxiv* 10.1101/2021.05.14.444202 (2021)  
-[link](https://www.biorxiv.org/content/10.1101/2021.05.14.444202v1){:target="_blank"}.  
+*PLOS Computational Biology* Aug 10;18(8):e1010393 (2022)  
+[link](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010393){:target="_blank"}.  
 
 Candidate Cancer Driver Mutations in Distal Regulatory Elements and Long-Range Chromatin Interaction Networks.  
 **Helen Zhu**\*, Liis Uusküla-Reimand\*, **Keren Isaev**\*, **Lina Wadi**, Azad Alizada, Shimin Shuai, Vincent Huang, **Dike Aduluso-Nwaobasi**, **Marta Paczkowska**, **Diala Abd-Rabbo**, **Oliver Ocsenas**, Minggao Liang, **J Drew Thompson**, **Yao Li**, **Luyao Ruan**, **Michal Krassowski**, **Irakli Dzneladze**, Jared T Simpson, Mathieu Lupien, Lincoln D Stein, Paul C Boutros, Michael D Wilson, **Jüri Reimand**.  
-*Molecular Cell* 77 (6) 1307-1321. e10 (2020)  
+*Molecular Cell* 77 (6) 1307-1321 e10 (2020)  
 [link](https://www.sciencedirect.com/science/article/pii/S1097276519309578){:target="_blank"}.  
 
 # multi-omics data integration, pathways and networks 
