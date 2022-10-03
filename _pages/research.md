@@ -43,7 +43,7 @@ Lastly, we demonstrated that the epigenome-informed models can point out regions
 *Chromatin accessibility of primary human cancers ties regional mutational processes and signatures with tissues of origin.*  
 Oliver Ocsenas, Jüri Reimand.  
 *PLOS Computational Biology* Aug 10;18(8):e1010393 (2022).  
-[paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010393){:target="_blank"}
+[link](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010393){:target="_blank"}
 
 
 
