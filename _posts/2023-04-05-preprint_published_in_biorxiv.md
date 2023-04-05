@@ -1,5 +1,5 @@
 ---
-title: "New preprint: Mutational processes of tobacco smoking and APOBEC activity gernate protein-truncating mutations in cancer genomes"
+title: "New preprint: Mutational processes of tobacco smoking and APOBEC activity generate protein-truncating mutations in cancer genomes"
 categories:
   - news
 tags:
