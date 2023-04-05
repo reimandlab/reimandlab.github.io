@@ -8,7 +8,7 @@ Highlighted papers of the major research areas of the lab are listed below. See 
 # cancer drivers and passengers
 
 Mutational processes of tobacco smoking and APOBEC activity generate protein-truncating mutations in cancer genomes.
-**Nina Adler**, **Alexander T Bahcheli**, **Kevin Cheng**, Khalid N Al-Zahrani, **Mykhaylo Slobodyanyuk**, **Diogo Pellegrina**, Daniel Schramek,**Jüri Reimand**\*. 
+**Nina Adler**, **Alexander T Bahcheli**, **Kevin Cheng**, Khalid N Al-Zahrani, **Mykhaylo Slobodyanyuk**, **Diogo Pellegrina**, Daniel Schramek, **Jüri Reimand**\*. 
 *bioRxiv* preprint March 19, 2023 
 [link](https://doi.org/10.1101/2023.03.19.533271){:target="_blank"}.
 
