@@ -124,7 +124,7 @@ home: true
       <a class="more" href="{{ '/publications/' | relative_url }}">All {{ papers.size }} publications →</a>
     </div>
     <ul class="pubs">
-      {%- for p in featured limit: 8 %}{% include paper.html paper=p compact=true %}{% endfor %}
+      {%- for p in featured limit: 12 %}{% include paper.html paper=p compact=true %}{% endfor %}
     </ul>
     <p class="muted" style="margin-top:20px;font-size:15px">
       Lab members in bold. Full list also on <a href="{{ s.links.scholar }}">Google Scholar</a>.
