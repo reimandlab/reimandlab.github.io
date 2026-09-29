@@ -1,0 +1,68 @@
+# Scholar import: entries to check
+
+No DOIs in the Scholar export: add `doi:` where you want a link.
+
+- `2020-rheinbay-nature.md`: Analyses of non-coding somatic drivers in 2,658 cancer whole genomes — author list truncated; lab-led guessed from first author only
+- `2010-looke-journal-biological-chemistry.md`: Relicensing of transcriptionally inactivated replication origins in budding yeast — no theme guessed
+- `2012-northcott-nature.md`: Subgroup-specific structural variation across 1,000 medulloblastoma genomes — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2016-marcotte-cell.md`: Functional genomic landscape of human breast cancer drivers, vulnerabilities, and resistan — author list truncated; lab-led guessed from first author only
+- `2015-meyer-proceedings-national-academy.md`: Single cell-derived clonal analysis of human glioblastoma links functional and genomic het — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2012-uuskula-plos-one.md`: Mid-gestational gene expression profile in placenta and link to pregnancy complications — no theme guessed
+- `2012-altmae-molecular-endocrinology.md`: Research resource: interactome of human embryo implantation: identification of gene expres — author list truncated; lab-led guessed from first author only
+- `2018-mack-nature.md`: Therapeutic targeting of ependymoma as informed by oncogenic enhancer profiling — author list truncated; lab-led guessed from first author only
+- `2021-schachter-nature-communications.md`: Single allele loss-of-function mutations select and sculpt conditional cooperative network — author list truncated; lab-led guessed from first author only
+- `2020-reyna-nature-communications.md`: Pathway and network analysis of more than 2500 whole cancer genomes — author list truncated; lab-led guessed from first author only
+- `2017-cavalli-cancer-cell.md`: Intertumoral heterogeneity within medulloblastoma subgroups — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2015-ding-nature-communications.md`: Systematic analysis of somatic mutations impacting gene expression in 12 tumour types — author list truncated; lab-led guessed from first author only
+- `2012-xiong-oncogenesis.md`: Disruption of Abi1/Hssh3bp1 expression induces prostatic intraepithelial neoplasia in the  — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2019-guarischisousa-plos-genetics.md`: A transcriptome-based signature of pathological angiogenesis predicts breast cancer patien — author list truncated; lab-led guessed from first author only
+- `2016-sturm-cell.md`: New brain tumor entities emerge from molecular classification of CNS-PNETs — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2018-dzneladze-plos-one.md`: SubID, a non-median dichotomization tool for heterogeneous populations, reveals the pan-ca — no theme guessed
+- `2022-ghamrasni-molecular-cancer-research.md`: Mutations in Noncoding Cis-Regulatory Elements Reveal Cancer Driver Cistromes in Luminal B — author list truncated; lab-led guessed from first author only
+- `2014-kool-cancer-cell.md`: Genome sequencing of SHH medulloblastoma predicts genotype-related response to smoothened  — author list truncated; lab-led guessed from first author only
+- `2018-huang-cell.md`: Pathogenic germline variants in 10,389 adult cancers — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2009-schulz-plos-one.md`: The FunGenES database: a genomics resource for mouse embryonic stem cell differentiation — author list truncated; lab-led guessed from first author only
+- `2016-uuskulareimand-genome-biology.md`: Topoisomerase II beta interacts with cohesin and CTCF at topological domain borders — author list truncated; lab-led guessed from first author only
+- `2015-pajtler-cancer-cell.md`: Molecular classification of ependymal tumors across all CNS compartments, histopathologica — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2018-kahn-nature-communications.md`: Notch1 regulates the initiation of metastasis and self-renewal of Group 3 medulloblastoma — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2010-billon-genome-biology.md`: Comprehensive transcriptome analysis of mouse embryonic stem cell adipogenesis unravels ne — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2019-sachdeva-cancer-research.md`: ID1 is critical for tumorigenesis and regulates chemoresistance in glioblastoma — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2009-adler-genome-biology.md`: Mining for coexpression across hundreds of datasets using novel rank aggregation and visua — no theme guessed
+- `2021-skowron-nature-communications.md`: The transcriptional landscape of Shh medulloblastoma — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2013-consortium-nature-methods.md`: Computational approaches to identify functional genetic variants in cancer genomes — no theme guessed; no authors in export (group author?)
+- `2015-creixell-nature-methods.md`: Pathway and network analysis of cancer genomes — author list truncated; lab-led guessed from first author only
+- `2020-kauko-journal-biological-chemistry.md`: Phosphoproteome and drug-response effects mediated by the three protein phosphatase 2A inh — author list truncated; lab-led guessed from first author only
+- `2012-reimand-genome-biology.md`: m: Explorer: multinomial regression models reveal positive and negative regulators of long — no theme guessed
+- `2015-huang-nature-neuroscience.md`: EAG2 potassium channel with evolutionarily conserved function as a brain tumor target — author list truncated; lab-led guessed from first author only
+- `2013-tamborero-scientific-reports.md`: Comprehensive identification of mutational cancer driver genes across 12 tumor types — author list truncated; lab-led guessed from first author only
+- `2017-morrissy-nature-genetics.md`: Spatial heterogeneity in medulloblastoma — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2015-reimand-plos-genetics.md`: Evolutionary constraint and disease associations of post-translational modification sites  — no theme guessed
+- `2016-morrissy-nature.md`: Divergent clonal selection dominates medulloblastoma at recurrence — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2022-burns-european-urology.md`: Rare Germline Variants Are Associated with Rapid Biochemical Recurrence After Radical Pros — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2022-hendrikse-nature.md`: Failure of human rhombic lip differentiation underlies medulloblastoma formation — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2022-kamedasmith-nature-communications.md`: Characterization of an RNA binding protein interactome reveals a context-specific post-tra — author list truncated; lab-led guessed from first author only
+- `2022-brar-liver-cancer-international.md`: Development of diagnostic and prognostic molecular biomarkers in hepatocellular carcinoma  — year guessed from key (2022)
+- `2023-pellegrina-frontiers-endocrinology.md`: Transcriptomic changes in liver transplant recipients with non-alcoholic steatohepatitis i — no theme guessed
+- `2023-dervovic-nature-communications.md`: In vivo CRISPR screens reveal Serpinb9 and Adam2 as regulators of immune therapy response  — author list truncated; lab-led guessed from first author only
+- `2024-bahcheli-embo-journal.md`: Pan-cancer ion transport signature reveals functional regulators of glioblastoma aggressio — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2024-pasini-international-journal-hepatology.md`: Acyl-CoA Thioesterase 1 Contributes to Transition of Steatosis to Metabolic-Associated Ste — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2024-reimand-thesciencebreaker.md`: Tobacco smoking and other exposures shut off cancer-fighting genes — year guessed from key (2024); no theme guessed
+- `2025-yamaguchi-cancer-discovery.md`: The Germline and Somatic Origins of Prostate Cancer Heterogeneity — author list truncated; lab-led guessed from first author only
+- `2025-esenturk-arxiv.md`: Causes of evolutionary divergence in prostate cancer — year guessed from key (2025); author list truncated; lab-led guessed from first author only; no theme guessed
+- `2025-abeysundara-nature-cell-biology.md`: Metastatic medulloblastoma remodels the local leptomeningeal microenvironment to promote f — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2025-cai-nature-neuroscience.md`: Myelin--axon interface vulnerability in Alzheimer’s disease revealed by subcellular proteo — author list truncated; lab-led guessed from first author only
+- `2025-nor-developmental-cell.md`: Therapeutic radiation drives leptomeningeal dissemination of medulloblastoma through an in — author list truncated; lab-led guessed from first author only
+- `2025-richman-cancer-research.md`: Carbonic Anhydrase Inhibition Sensitizes Group 3 Medulloblastoma to Radiotherapy — author list truncated; lab-led guessed from first author only
+- `2026-min-nature-biomedical-engineering.md`: Fluid shear stress activates a targetable mechano-metastatic cascade to promote medullobla — author list truncated; lab-led guessed from first author only
+- `2025-bayati-molecular-cancer-research.md`: Cancer genomic alterations and microenvironmental features encode synergistic interactions — author list truncated; lab-led guessed from first author only
+- `2025-gheybi-nature-communications.md`: Pathogenic variants reveal candidate genes for prostate cancer germline testing for men of — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2025-uuskulareimand-nature-communications.md`: Topoisomerase IIb binding delineates localized mutational processes and driver mutations i — author list truncated; lab-led guessed from first author only
+- `2025-grenierpleau-journal-extracellular-vesicles.md`: Extracellular Vesicles Define Discrete Nano-Based Niches Within the Human Haematopoietic S — year guessed from key (2025); author list truncated; lab-led guessed from first author only; no theme guessed
+- `2026-grenierpleau-haematologica.md`: Extracellular vesicles from aged individuals trigger mitochondrial dysfunction in haematop — year guessed from key (2026); author list truncated; lab-led guessed from first author only; no theme guessed
+- `2026-lambourne-nature-communications.md`: Experimental assessment of AI-based interactome mapping — author list truncated; lab-led guessed from first author only
+- `2026-cheng-biorxiv.md`: Therapy-associated mutagenesis at CTCF binding sites is shaped by chromatin context and DN — year guessed from key (2026)
+- `2026-gruber-nature.md`: Integrated signatures define mutational processes in prostate cancer — author list truncated; lab-led guessed from first author only
+- `2026-basrai-biorxiv.md`: Multi-platform reassessment of human mitochondrial DNA methylation reveals signals consist — author list truncated; lab-led guessed from first author only
+- `2026-alzahrani-nature.md`: Aneuploidy selects for the acquisition of driver genes in breast cancer — author list truncated; lab-led guessed from first author only
+- `2026-fong-biorxiv.md`: Medulloblastoma Forms Symbiotic Metabolic Partnerships with Macrophages to Establish Lepto — author list truncated; lab-led guessed from first author only; no theme guessed
+- `2026-kiriy-nature-communications.md`: Recurrent mechanisms of biallelic epigenetic inactivation reveal new putative tumour suppr — author list truncated; lab-led guessed from first author only; no theme guessed

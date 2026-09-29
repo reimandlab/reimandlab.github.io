@@ -1,7 +1,7 @@
 ---
 import { authorKey } from '../lib/data';
-interface Props { authors: string[]; labKeys: Set<string>; max?: number }
-const { authors, labKeys, max = 14 } = Astro.props;
+interface Props { authors: string[]; labKeys: Set<string>; max?: number; truncated?: boolean }
+const { authors, labKeys, max = 14, truncated = false } = Astro.props;
 // Long consortium-style lists: first (max-3) names, …, last 2
 const shown: (string | null)[] = authors.length > max
   ? [...authors.slice(0, max - 3), null, ...authors.slice(-2)]
@@ -9,4 +9,4 @@ const shown: (string | null)[] = authors.length > max
 ---
 <div class="a">{shown.map((a, i) => (
   <>{i > 0 && ', '}{a === null ? '…' : labKeys.has(authorKey(a)) ? <b>{a}</b> : a}</>
-))}</div>
+))}{truncated && ', et al.'}</div>

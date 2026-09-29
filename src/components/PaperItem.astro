@@ -15,7 +15,7 @@ const d = paper.data;
 >
   {paper.href ? <a class="t" href={paper.href}>{d.title}</a> : <span class="t">{d.title}</span>}
   {d.featured && !compact && <span class="star" title="Featured">★</span>}
-  <Authors authors={d.authors} labKeys={labKeys} max={compact ? 10 : 14} />
+  <Authors authors={d.authors} labKeys={labKeys} max={compact ? 10 : 14} truncated={d.authors_truncated} />
   <div class="j">
     <i>{d.journal}</i> {d.year}
     <span class="links">

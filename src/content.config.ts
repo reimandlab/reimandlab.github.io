@@ -29,6 +29,7 @@ const papers = defineCollection({
   schema: z.object({
     title: z.string(),
     authors: z.array(z.string()).min(1),  // "Name*" marks co-first / co-corresponding
+    authors_truncated: z.boolean().default(false), // list is incomplete; shown with "et al."
     journal: z.string(),
     year: z.number().int(),
     doi: z.string().optional(),

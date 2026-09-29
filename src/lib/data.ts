@@ -45,8 +45,11 @@ export async function getPapers(): Promise<Paper[]> {
   return papers
     .map((p) => {
       const a = p.data.authors;
-      const inferred = labKeys.has(authorKey(a[0])) || labKeys.has(authorKey(a[a.length - 1]));
-      const href = p.data.doi ? `https://doi.org/${p.data.doi}` : (p.data.url ?? p.data.preprint);
+      const inferred = labKeys.has(authorKey(a[0])) ||
+        (!p.data.authors_truncated && labKeys.has(authorKey(a[a.length - 1])));
+      const href = p.data.doi ? `https://doi.org/${p.data.doi}`
+        : p.data.url ?? p.data.preprint
+        ?? `https://scholar.google.com/scholar?q=${encodeURIComponent(`"${p.data.title}"`)}`;
       return Object.assign(p, { labLed: p.data.lab_led ?? inferred, href });
     })
     .sort((x, y) => y.data.year - x.data.year || x.data.title.localeCompare(y.data.title));
