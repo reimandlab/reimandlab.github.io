@@ -4,7 +4,7 @@ authors: ["Andreas J Gruber*", "André V Olsen*", "Barbara Hernando*", "Kevin CL
 authors_truncated: true   # Scholar export cut the list; paste the full list and remove this line
 journal: "Nature"
 year: 2026
-themes: [drivers, multi-omics]
+themes: [drivers]
 lab_led: true
 featured: true
 ---

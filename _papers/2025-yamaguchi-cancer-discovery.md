@@ -6,5 +6,4 @@ journal: "Cancer Discovery"
 year: 2025
 themes: [drivers]
 lab_led: true
-featured: true
 ---
