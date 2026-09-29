@@ -1,0 +1,6 @@
+{%- comment -%} Sets `href` for include.paper: DOI, then link, then preprint, then a Google Scholar title search. {%- endcomment -%}
+{%- assign _pp = include.paper -%}
+{%- if _pp.doi -%}{%- assign href = "https://doi.org/" | append: _pp.doi -%}
+{%- elsif _pp.link -%}{%- assign href = _pp.link -%}
+{%- elsif _pp.preprint -%}{%- assign href = _pp.preprint -%}
+{%- else -%}{%- assign href = _pp.title | prepend: '"' | append: '"' | url_encode | prepend: "https://scholar.google.com/scholar?q=" -%}{%- endif -%}

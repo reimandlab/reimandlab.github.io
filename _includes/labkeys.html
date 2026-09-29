@@ -1,15 +1,17 @@
 {%- comment -%}
-Builds `labkeys`, a string like "|reimand j|bahcheli a|…|" with surname + first initial
-of every lab member (current and alumni, plus their author_names spellings).
+Builds `labfull` ("|reimand juri|…|") and `labinit` ("|reimand j|…|") from every lab
+member (current and alumni) and their author_names spellings. Used by islab.html.
 {%- endcomment -%}
-{%- assign labkeys = "|" -%}
+{%- assign labfull = "|" -%}
+{%- assign labinit = "|" -%}
 {%- for person in site.people -%}
   {%- assign names = person.author_names | join: "|" -%}
   {%- assign names = person.name | append: "|" | append: names | split: "|" -%}
   {%- for nm in names -%}
     {%- if nm != "" -%}
       {%- include authorkey.html name=nm -%}
-      {%- assign labkeys = labkeys | append: akey | append: "|" -%}
+      {%- assign labfull = labfull | append: akey_full | append: "|" -%}
+      {%- assign labinit = labinit | append: akey_init | append: "|" -%}
     {%- endif -%}
   {%- endfor -%}
 {%- endfor -%}

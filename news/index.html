@@ -10,7 +10,7 @@ redirect_from: /posts/
     <h1>News</h1>
     {%- for g in byyear %}
     <div class="year-group">
-      <h3>{{ g.name }}</h3>
+      <h2>{{ g.name }}</h2>
       {% include news-list.html posts=g.items %}
     </div>
     {%- endfor %}

@@ -9,7 +9,7 @@ layout: default
     <h1 class="mono">{{ page.title }}</h1>
     <p class="muted" style="font-size:19px">{{ page.tagline }}</p>
     <div class="badges" style="margin:16px 0 28px">
-      {%- for l in page.links %}<a class="badge" href="{{ l[1] }}">{{ s.link_labels[l[0]] | default: l[0] }}</a>{% endfor -%}
+      {%- for l in page.links %}{% assign lk = l[0] %}<a class="badge" href="{{ l[1] }}">{{ s.link_labels[lk] | default: lk }}</a>{% endfor -%}
     </div>
     <div class="prose">{{ content }}</div>
     {%- if page.image %}<div class="figure"><img src="{{ page.image | relative_url }}" alt="{{ page.title }} overview"></div>{% endif %}

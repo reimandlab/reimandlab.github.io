@@ -1,0 +1,12 @@
+{%- comment -%}
+Sets `islab` for include.name. Full first names must match exactly ("Christine Lee" is not
+"Christian Lee"); an initial-only author ("J Reimand") matches surname + initial.
+{%- endcomment -%}
+{%- include authorkey.html name=include.name -%}
+{%- if akey_isinit -%}
+  {%- assign _needle = "|" | append: akey_init | append: "|" -%}
+  {%- if labinit contains _needle -%}{%- assign islab = true -%}{%- else -%}{%- assign islab = false -%}{%- endif -%}
+{%- else -%}
+  {%- assign _needle = "|" | append: akey_full | append: "|" -%}
+  {%- if labfull contains _needle -%}{%- assign islab = true -%}{%- else -%}{%- assign islab = false -%}{%- endif -%}
+{%- endif -%}

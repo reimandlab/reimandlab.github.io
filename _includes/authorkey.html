@@ -1,4 +1,10 @@
-{%- comment -%} Sets `akey` to "surname initial" for include.name, e.g. "Jüri Reimand*" -> "reimand j" {%- endcomment -%}
+{%- comment -%}
+Keys for include.name: akey_full "surname firstname", akey_init "surname initial",
+akey_isinit true when the first name is only an initial ("J Reimand").
+{%- endcomment -%}
 {%- assign _parts = include.name | remove: "*" | replace: ".", " " | slugify: "latin" | split: "-" -%}
-{%- assign _first = _parts.first | slice: 0 -%}
-{%- assign akey = _parts.last | append: " " | append: _first -%}
+{%- assign _fn = _parts.first -%}
+{%- assign _ini = _fn | slice: 0 -%}
+{%- assign akey_full = _parts.last | append: " " | append: _fn -%}
+{%- assign akey_init = _parts.last | append: " " | append: _ini -%}
+{%- if _fn.size == 1 -%}{%- assign akey_isinit = true -%}{%- else -%}{%- assign akey_isinit = false -%}{%- endif -%}

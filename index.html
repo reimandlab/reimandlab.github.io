@@ -49,8 +49,8 @@ home: true
           {%- if rp.size > 0 %}
           <div><span class="lbl">Key papers</span>
             {%- for p in rp limit: 2 %}
-            {%- if p.doi %}{% assign h = "https://doi.org/" | append: p.doi %}{% else %}{% assign h = p.url %}{% endif %}
-            <div><a href="{{ h }}">{{ p.title }}</a> <span class="muted">· {{ p.journal }} {{ p.year }}</span></div>
+            {%- include paperhref.html paper=p %}
+            <div><a href="{{ href }}">{{ p.title }}</a> <span class="muted">· {{ p.journal }} {{ p.year }}</span></div>
             {%- endfor %}
           </div>
           {%- endif %}
@@ -76,11 +76,11 @@ home: true
       {% include avatar.html name=pi.name photo=pi.photo size=140 %}
       <div>
         <h3>{{ pi.name }}</h3>
-        <div class="role">{{ pi.title | default: s.roles.pi }}</div>
+        <div class="role">{{ pi.position | default: s.roles.pi }}</div>
         {%- if pi.affiliation %}<p>{{ pi.affiliation }}</p>{% endif %}
         {{ pi.content | markdownify }}
         {%- if pi.links %}
-        <div class="badges" style="margin-top:10px">{% for l in pi.links %}<a class="badge" href="{{ l[1] }}">{% if l[0] == "x" %}X{% else %}{{ l[0] | capitalize }}{% endif %}</a>{% endfor %}</div>
+        <div class="badges" style="margin-top:10px">{% for l in pi.links %}{% assign lk = l[0] %}<a class="badge" href="{{ l[1] }}">{% if lk == "x" %}X{% elsif lk == "github" %}GitHub{% elsif lk == "scholar" %}Google Scholar{% else %}{{ lk | capitalize }}{% endif %}</a>{% endfor %}</div>
         {%- endif %}
       </div>
     </div>
@@ -94,7 +94,7 @@ home: true
         {% include avatar.html name=p.name photo=p.photo %}
         <div>
           <h3>{{ p.name }}</h3>
-          <div class="role">{{ p.title | default: s.roles[p.role] }}{% if p.program %} · {{ p.program }}{% endif %}</div>
+          <div class="role">{{ p.position | default: s.roles[p.role] }}{% if p.program %} · {{ p.program }}{% endif %}</div>
           {%- if p.interest %}<p>{{ p.interest }}</p>{% endif %}
         </div>
       </div>
@@ -145,7 +145,7 @@ home: true
         <h3><a href="{{ t.url | relative_url }}">{{ t.title }}</a></h3>
         <p>{{ t.tagline }}</p>
         <div class="badges">
-          {%- for l in t.links %}<a class="badge" href="{{ l[1] }}">{{ s.link_labels[l[0]] | default: l[0] }}</a>{% endfor -%}
+          {%- for l in t.links %}{% assign lk = l[0] %}<a class="badge" href="{{ l[1] }}">{{ s.link_labels[lk] | default: lk }}</a>{% endfor -%}
           {%- if t.paper %}<a class="badge" href="https://doi.org/{{ t.paper }}">Paper</a>{% endif -%}
         </div>
       </article>

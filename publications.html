@@ -31,13 +31,14 @@ redirect_from: /papers/
 
     {%- for g in byyear %}
     <div class="year-group">
-      <h3>{{ g.name }}</h3>
+      <h2>{{ g.name }}</h2>
       <ul class="pubs">
         {%- assign items = g.items | sort: "title" -%}
         {%- for p in items %}{% include paper.html paper=p %}{% endfor %}
       </ul>
     </div>
     {%- endfor %}
+    <p class="empty muted" hidden>No papers match. Try another filter or search term.</p>
   </div>
 </div>
 
@@ -47,8 +48,11 @@ redirect_from: /papers/
     var search = document.querySelector('.filters input');
     var count = document.querySelector('.count');
     var filter = 'all';
+    var empty = document.querySelector('.empty');
+    function norm(x) { return (x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }
+    document.querySelectorAll('.pub').forEach(function (li) { li.dataset.text = norm(li.dataset.text); });
     function apply() {
-      var q = search.value.trim().toLowerCase(), n = 0;
+      var q = norm(search.value.trim()), n = 0;
       document.querySelectorAll('.year-group').forEach(function (g) {
         var visible = 0;
         g.querySelectorAll('.pub').forEach(function (li) {
@@ -66,6 +70,7 @@ redirect_from: /papers/
         n += visible;
       });
       count.textContent = n + (n === 1 ? ' paper' : ' papers');
+      empty.hidden = n !== 0;
     }
     buttons.forEach(function (b) {
       b.addEventListener('click', function () {

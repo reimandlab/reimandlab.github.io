@@ -1,4 +1,4 @@
-{%- comment -%} include.authors (array), include.max, include.truncated; needs `labkeys` {%- endcomment -%}
+{%- comment -%} include.authors (array), include.max, include.truncated; needs labkeys.html {%- endcomment -%}
 {%- assign _max = include.max | default: 14 -%}
 {%- assign _n = include.authors | size -%}
 {%- assign _head = _max | minus: 3 -%}
@@ -12,9 +12,8 @@
     {%- continue -%}
   {%- endif -%}
   {%- unless forloop.first -%}, {% endunless -%}
-  {%- include authorkey.html name=a -%}
-  {%- assign _needle = "|" | append: akey | append: "|" -%}
-  {%- if labkeys contains _needle -%}<b>{{ a }}</b>{%- else -%}{{ a }}{%- endif -%}
+  {%- include islab.html name=a -%}
+  {%- if islab -%}<b>{{ a }}</b>{%- else -%}{{ a }}{%- endif -%}
 {%- endfor -%}
 {%- if include.truncated -%}, et al.{%- endif -%}
 </div>

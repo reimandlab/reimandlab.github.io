@@ -67,8 +67,10 @@ p { margin: 0 0 1em; }
 .nav a:hover { color: var(--text); background: var(--line); }
 .nav a[aria-current='true'] { color: var(--text); background: var(--accent-soft); }
 @media (max-width: 720px) {
-  .site-header .wrap { gap: 12px; }
-  .brand span { display: none; }
+  html { scroll-padding-top: 116px; }
+  .site-header .wrap { flex-wrap: wrap; height: auto; padding-top: 10px; padding-bottom: 8px; row-gap: 6px; }
+  .nav { margin-left: -8px; width: calc(100% + 8px); flex-wrap: wrap; overflow: visible; gap: 2px; }
+  .nav a { padding: 5px 8px; font-size: 14px; }
 }
 
 /* ---------- sections ---------- */
@@ -103,6 +105,7 @@ section:first-of-type { border-top: 0; }
 
 /* ---------- news ---------- */
 .news-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; }
+.news-card h2 .more { font: 14px/1 var(--sans); letter-spacing: 0; text-transform: none; }
 .news-card h2 { font-size: 13px; font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; display: flex; justify-content: space-between; }
 .news { list-style: none; margin: 0; padding: 0; }
 .news li { display: grid; grid-template-columns: 72px 1fr; gap: 12px; padding: 9px 0; border-top: 1px solid var(--line); font-size: 15px; line-height: 1.45; }
@@ -163,7 +166,7 @@ section:first-of-type { border-top: 0; }
 .pub .star { color: var(--accent); font-size: 12px; margin-left: 6px; }
 .pub.collab .t { font-weight: 400; }
 .pub.collab { opacity: .82; }
-.year-group h3 { font: 500 14px var(--mono); color: var(--faint); margin: 28px 0 4px; }
+.year-group h2, .year-group h3 { font: 500 14px var(--mono); color: var(--faint); margin: 28px 0 4px; }
 .filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 24px 0 8px; }
 .filters button {
   font: 13px/1 var(--mono); padding: 8px 12px; border-radius: 999px; cursor: pointer;
@@ -196,7 +199,7 @@ section:first-of-type { border-top: 0; }
 .page { padding: 56px 0 80px; }
 .page h1 { font-size: clamp(32px, 5vw, 44px); margin-bottom: 8px; }
 .prose { max-width: 42em; font-size: 17px; }
-.prose img { margin: 24px 0; border-radius: 10px; border: 1px solid var(--line); background: var(--tile); max-width: 560px; }
+.prose img { margin: 24px 0; border-radius: 10px; border: 1px solid var(--line); background: var(--tile); width: auto; max-width: min(100%, 560px); height: auto; }
 .back { font-size: 15px; text-decoration: none; color: var(--muted); display: inline-block; margin-bottom: 28px; }
 .figure { background: var(--tile); border-radius: var(--radius); border: 1px solid var(--line); padding: 16px; margin: 28px 0; max-width: 760px; }
 

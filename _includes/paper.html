@@ -1,16 +1,13 @@
-{%- comment -%} include.paper, include.compact; needs `labkeys` {%- endcomment -%}
+{%- comment -%} include.paper, include.compact; needs labkeys.html {%- endcomment -%}
 {%- assign p = include.paper -%}
-{%- include authorkey.html name=p.authors.first -%}{%- assign _k1 = "|" | append: akey | append: "|" -%}
-{%- include authorkey.html name=p.authors.last -%}{%- assign _k2 = "|" | append: akey | append: "|" -%}
+{%- include islab.html name=p.authors.first -%}{%- assign _lab1 = islab -%}
+{%- include islab.html name=p.authors.last -%}{%- assign _lab2 = islab -%}
 {%- if p.lab_led == true -%}{%- assign lab = true -%}
 {%- elsif p.lab_led == false -%}{%- assign lab = false -%}
-{%- elsif labkeys contains _k1 -%}{%- assign lab = true -%}
-{%- elsif p.authors_truncated != true and labkeys contains _k2 -%}{%- assign lab = true -%}
+{%- elsif _lab1 -%}{%- assign lab = true -%}
+{%- elsif p.authors_truncated != true and _lab2 -%}{%- assign lab = true -%}
 {%- else -%}{%- assign lab = false -%}{%- endif -%}
-{%- if p.doi -%}{%- assign href = "https://doi.org/" | append: p.doi -%}
-{%- elsif p.url -%}{%- assign href = p.url -%}
-{%- elsif p.preprint -%}{%- assign href = p.preprint -%}
-{%- else -%}{%- assign href = p.title | prepend: '"' | append: '"' | url_encode | prepend: "https://scholar.google.com/scholar?q=" -%}{%- endif -%}
+{%- include paperhref.html paper=p -%}
 {%- capture searchtext -%}{{ p.title }} {{ p.authors | join: " " }} {{ p.journal }} {{ p.year }}{%- endcapture -%}
 <li class="pub{% unless lab or include.compact %} collab{% endunless %}"
     data-lab="{% if lab %}1{% else %}0{% endif %}"

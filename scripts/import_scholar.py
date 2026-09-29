@@ -64,7 +64,7 @@ def main():
     used = {p.stem for p in OUT.glob('*.md')}
     review, written, skipped = [], 0, 0
     for _, key, body in entries:
-        title = delatex(field(body, 'title')).replace('g: Profiler', 'g:Profiler')
+        title = delatex(field(body, 'title')).replace('g: Profiler', 'g:Profiler').replace('m: Explorer', 'm:Explorer').replace('--', '–')
         if norm_title(title) in existing:
             skipped += 1; continue
         raw = [x.strip() for x in re.split(r'\s+and\s+', field(body, 'author').replace('\n', ' ')) if x.strip()]
