@@ -4,5 +4,7 @@ authors: ["Hanli Jiang", "Alexander T Bahcheli", "Kevin CL Cheng", "Jüri Reiman
 journal: "bioRxiv"
 year: 2026
 type: preprint
+doi: 10.64898/2026.05.24.727503
+code: https://github.com/reimandlab/CAMM
 themes: [drivers]
 ---
