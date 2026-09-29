@@ -80,7 +80,7 @@ home: true
         {%- if pi.affiliation %}<p>{{ pi.affiliation }}</p>{% endif %}
         {{ pi.content | markdownify }}
         {%- if pi.links %}
-        <div class="badges" style="margin-top:10px">{% for l in pi.links %}{% assign lk = l[0] %}<a class="badge" href="{{ l[1] }}">{% if lk == "x" %}X{% elsif lk == "github" %}GitHub{% elsif lk == "scholar" %}Google Scholar{% else %}{{ lk | capitalize }}{% endif %}</a>{% endfor %}</div>
+        <div class="badges" style="margin-top:10px">{% for l in pi.links %}{% assign lk = l[0] %}<a class="badge" href="{{ l[1] }}">{% if lk == "bluesky" %}Bluesky{% elsif lk == "github" %}GitHub{% elsif lk == "scholar" %}Google Scholar{% else %}{{ lk | capitalize }}{% endif %}</a>{% endfor %}</div>
         {%- endif %}
       </div>
     </div>
@@ -127,7 +127,7 @@ home: true
       {%- for p in featured limit: 8 %}{% include paper.html paper=p compact=true %}{% endfor %}
     </ul>
     <p class="muted" style="margin-top:20px;font-size:15px">
-      Lab members in bold. Also on <a href="{{ s.links.scholar }}">Google Scholar</a> and <a href="{{ s.links.pubmed }}">PubMed</a>.
+      Lab members in bold. Full list also on <a href="{{ s.links.scholar }}">Google Scholar</a>.
     </p>
   </div>
 </section>

@@ -2,13 +2,13 @@
 name: Jüri Reimand
 role: pi
 position: Principal Investigator
-affiliation: Investigator, OICR · Associate Professor, Medical Biophysics and Molecular Genetics, University of Toronto
+affiliation: Investigator, OICR · Associate Professor, Department of Molecular Genetics, University of Toronto
 photo: /images/people/juri.png
 interest: Computational biology, machine learning and cancer genomics.
 links:
-  scholar: https://scholar.google.ca/citations?user=hy4bI4UAAAAJ
+  scholar: https://scholar.google.com/citations?user=MFByBqwAAAAJ&hl=en
   github: https://github.com/reimandlab
-  x: https://x.com/reimand
+  bluesky: https://bsky.app/profile/reimand.bsky.social
 author_names: [Juri Reimand, Jueri Reimand, J Reimand]
 order: 0
 ---

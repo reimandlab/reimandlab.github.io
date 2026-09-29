@@ -178,6 +178,10 @@ section:first-of-type { border-top: 0; }
   border: 1px solid var(--line); background: var(--surface); color: var(--text);
 }
 .count { font: 13px var(--mono); color: var(--faint); }
+.pub-section { padding: 0; border: 0; margin-top: 36px; }
+.pub-section-title { font-size: 22px; margin-bottom: 4px; }
+.pub-section-title .muted { font-weight: 400; font-size: 17px; }
+.pub-section > p { margin: 6px 0 0; font-size: 15px; }
 
 /* ---------- software ---------- */
 .grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }

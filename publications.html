@@ -7,14 +7,13 @@ redirect_from: /papers/
 {%- include labkeys.html -%}
 {%- assign s = site.data.site -%}
 {%- assign papers = site.papers | sort: "year" | reverse -%}
-{%- assign byyear = papers | group_by: "year" -%}
 <div class="page">
   <div class="wrap">
     <a class="back" href="{{ '/' | relative_url }}#publications">← Home</a>
     <h1>Publications</h1>
     <p class="muted">
       Lab members in bold; ★ marks featured papers; collaborations are shown in lighter type.
-      Also on <a href="{{ s.links.scholar }}">Google Scholar</a> and <a href="{{ s.links.pubmed }}">PubMed</a>.
+      Also on <a href="{{ s.links.scholar }}">Google Scholar</a>.
     </p>
 
     <div class="filters" role="group" aria-label="Filter publications">
@@ -29,15 +28,40 @@ redirect_from: /papers/
       <span class="count" aria-live="polite">{{ papers.size }} papers</span>
     </div>
 
-    {%- for g in byyear %}
-    <div class="year-group">
-      <h2>{{ g.name }}</h2>
-      <ul class="pubs">
-        {%- assign items = g.items | sort: "title" -%}
-        {%- for p in items %}{% include paper.html paper=p %}{% endfor %}
-      </ul>
-    </div>
-    {%- endfor %}
+    {%- assign start = s.lab_start | default: 2015 -%}
+    {%- assign labpapers = papers | where_exp: "p", "p.year >= start" -%}
+    {%- assign earlier = papers | where_exp: "p", "p.year < start" -%}
+
+    <section class="pub-section">
+      <h2 class="pub-section-title">Lab publications <span class="muted">({{ start }}–present)</span></h2>
+      {%- assign byyear = labpapers | group_by: "year" -%}
+      {%- for g in byyear %}
+      <div class="year-group">
+        <h3>{{ g.name }}</h3>
+        <ul class="pubs">
+          {%- assign items = g.items | sort: "title" -%}
+          {%- for p in items %}{% include paper.html paper=p %}{% endfor %}
+        </ul>
+      </div>
+      {%- endfor %}
+    </section>
+
+    {%- if earlier.size > 0 %}
+    <section class="pub-section">
+      <h2 class="pub-section-title">Earlier work <span class="muted">(before {{ start }})</span></h2>
+      <p class="muted">Doctoral and postdoctoral research before the lab was founded.</p>
+      {%- assign byyear = earlier | group_by: "year" -%}
+      {%- for g in byyear %}
+      <div class="year-group">
+        <h3>{{ g.name }}</h3>
+        <ul class="pubs">
+          {%- assign items = g.items | sort: "title" -%}
+          {%- for p in items %}{% include paper.html paper=p plain=true %}{% endfor %}
+        </ul>
+      </div>
+      {%- endfor %}
+    </section>
+    {%- endif %}
     <p class="empty muted" hidden>No papers match. Try another filter or search term.</p>
   </div>
 </div>
@@ -68,6 +92,9 @@ redirect_from: /papers/
         });
         g.hidden = visible === 0;
         n += visible;
+      });
+      document.querySelectorAll('.pub-section').forEach(function (sec) {
+        sec.hidden = !sec.querySelector('.year-group:not([hidden])');
       });
       count.textContent = n + (n === 1 ? ' paper' : ' papers');
       empty.hidden = n !== 0;

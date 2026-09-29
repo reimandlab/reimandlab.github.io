@@ -2,14 +2,15 @@
 {%- assign p = include.paper -%}
 {%- include islab.html name=p.authors.first -%}{%- assign _lab1 = islab -%}
 {%- include islab.html name=p.authors.last -%}{%- assign _lab2 = islab -%}
-{%- if p.lab_led == true -%}{%- assign lab = true -%}
+{%- if include.plain -%}{%- assign lab = false -%}
+{%- elsif p.lab_led == true -%}{%- assign lab = true -%}
 {%- elsif p.lab_led == false -%}{%- assign lab = false -%}
 {%- elsif _lab1 -%}{%- assign lab = true -%}
 {%- elsif p.authors_truncated != true and _lab2 -%}{%- assign lab = true -%}
 {%- else -%}{%- assign lab = false -%}{%- endif -%}
 {%- include paperhref.html paper=p -%}
 {%- capture searchtext -%}{{ p.title }} {{ p.authors | join: " " }} {{ p.journal }} {{ p.year }}{%- endcapture -%}
-<li class="pub{% unless lab or include.compact %} collab{% endunless %}"
+<li class="pub{% unless lab or include.compact or include.plain %} collab{% endunless %}"
     data-lab="{% if lab %}1{% else %}0{% endif %}"
     data-featured="{% if p.featured %}1{% else %}0{% endif %}"
     data-preprint="{% if p.type == 'preprint' %}1{% else %}0{% endif %}"

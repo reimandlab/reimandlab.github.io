@@ -1,7 +1,6 @@
 ---
 name: Kevin Cheng
-role: phd
-program: Medical Biophysics
+role: contributor
 photo: /images/people/Kevin.png
 interest: Treatment-induced mutations and drug resistance in metastatic cancer genomes.
 ---
