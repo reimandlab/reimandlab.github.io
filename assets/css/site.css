@@ -21,7 +21,7 @@
     --surface: #1a1b1e;
     --text: #ecebe8;
     --muted: #a3a6ab;
-    --faint: #7d8086;
+    --faint: #8e9197;
     --line: #2c2d31;
     --accent: #ff5d55;
     --accent-soft: #3a1d1c;
@@ -179,6 +179,7 @@ section:first-of-type { border-top: 0; }
   border: 1px solid var(--line); background: var(--surface); color: var(--text);
 }
 .count { font: 13px var(--mono); color: var(--faint); }
+@media (max-width: 720px) { .filters button { padding: 12px 14px; } }
 .pub-section { padding: 0; border: 0; margin-top: 36px; }
 .pub-section-title { font-size: 22px; margin-bottom: 4px; }
 .pub-section-title .muted { font-weight: 400; font-size: 17px; }
