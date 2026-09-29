@@ -48,7 +48,7 @@ home: true
         <div class="refs">
           {%- if rp.size > 0 %}
           <div><span class="lbl">Key papers</span>
-            {%- for p in rp limit: 2 %}
+            {%- for p in rp limit: 3 %}
             {%- include paperhref.html paper=p %}
             <div><a href="{{ href }}">{{ p.title }}</a> <span class="muted">· {{ p.journal }} {{ p.year }}</span></div>
             {%- endfor %}
@@ -146,7 +146,7 @@ home: true
         <p>{{ t.tagline }}</p>
         <div class="badges">
           {%- for l in t.links %}{% assign lk = l[0] %}<a class="badge" href="{{ l[1] }}">{{ s.link_labels[lk] | default: lk }}</a>{% endfor -%}
-          {%- if t.paper %}<a class="badge" href="https://doi.org/{{ t.paper }}">Paper</a>{% endif -%}
+          {%- if t.paper %}<a class="badge" href="{% if t.paper contains '://' %}{{ t.paper }}{% else %}https://doi.org/{{ t.paper }}{% endif %}">Paper</a>{% endif -%}
         </div>
       </article>
       {%- endfor %}

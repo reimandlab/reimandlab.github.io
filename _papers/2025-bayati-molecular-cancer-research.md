@@ -4,5 +4,8 @@ authors: ["Masroor Bayati", "Zoe P Klein", "Alexander T Bahcheli", "Mykhaylo Slo
 authors_truncated: true   # Scholar export cut the list; paste the full list and remove this line
 journal: "Molecular Cancer Research"
 year: 2025
+link: https://aacrjournals.org/mcr/article/23/12/971/767272
+code: https://github.com/reimandlab/PACIFIC
 themes: [biomarkers]
+featured: true
 ---

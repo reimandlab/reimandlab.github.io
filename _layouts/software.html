@@ -15,8 +15,10 @@ layout: default
     {%- if page.image %}<div class="figure"><img src="{{ page.image | relative_url }}" alt="{{ page.title }} overview"></div>{% endif %}
     {%- if page.paper %}
     {%- assign cite = site.papers | where: "doi", page.paper | first %}
+    {%- unless cite %}{% assign cite = site.papers | where: "link", page.paper | first %}{% endunless %}
     <div class="kicker" style="margin-top:32px">Please cite</div>
     {%- if cite %}<ul class="pubs">{% include paper.html paper=cite compact=true %}</ul>
+    {%- elsif page.paper contains "://" %}<p><a href="{{ page.paper }}">{{ page.paper }}</a></p>
     {%- else %}<p><a href="https://doi.org/{{ page.paper }}">doi:{{ page.paper }}</a></p>{% endif %}
     {%- endif %}
   </div>
