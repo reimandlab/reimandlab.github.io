@@ -30,8 +30,13 @@ defaults:
 feed:
   path: feed.xml
 
-exclude:
+exclude:            # note: this list replaces Jekyll's defaults
   - README.md
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - .astro/
+  - .jekyll-cache/
   - Gemfile
   - Gemfile.lock
   - scripts/
