@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import NewsList from '../../components/NewsList.astro';
+import { getNews } from '../../lib/data';
+
+const news = await getNews();
+const years = [...new Set(news.map((n) => n.date.getUTCFullYear()))];
+---
+<Base title="News">
+  <div class="page">
+    <div class="wrap" style="max-width:820px">
+      <a class="back" href="/">← Home</a>
+      <h1>News</h1>
+      {years.map((y) => (
+        <div class="year-group">
+          <h3>{y}</h3>
+          <NewsList items={news.filter((n) => n.date.getUTCFullYear() === y)} />
+        </div>
+      ))}
+    </div>
+  </div>
+</Base>

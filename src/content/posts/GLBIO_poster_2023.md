@@ -1,0 +1,9 @@
+---
+title: "Masroor and Kevin GLBIO 2023 Poster Presentation"
+date: 2023-06-06
+type: talk
+short: "Masroor Bayati and Kevin Cheng presented posters at GLBIO 2023"
+slug: "GLBIO_poster_2023"
+---
+
+Masroor Bayati and Kevin Cheng gave a poster presentation at the GLBIO conference 2023 in Montreal from May 16th to 18th, 2023. Masroor’s poster title: Systematic pan-cancer analysis to reveal the prognostic significance of driver mutations and the tumor immune microenvironment. Kevin’s poster title: Treatment-associated mutation rate variation in regulatory elements in metastatic cancer genomes.

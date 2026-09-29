@@ -1,0 +1,7 @@
+# Quick news items: one entry per line, newest first.
+# type: paper | preprint | award | talk | people | update
+# link is optional (a paper, a longer post under /news/, or any URL).
+#
+# - { date: 2026-09-15, type: paper, text: "Paper in Nature Communications on ...", link: "https://doi.org/..." }
+# - { date: 2026-09-01, type: people, text: "Welcome to new PhD student ..." }
+

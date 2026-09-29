@@ -1,0 +1,8 @@
+---
+interface Props { name: string; photo?: string; size?: number }
+const { name, photo, size = 72 } = Astro.props;
+const initials = name.split(/\s+/).map((w) => w[0]).filter(Boolean).slice(0, 2).join('');
+---
+{photo
+  ? <img class="avatar" src={photo} alt={name} width={size} height={size} loading="lazy" />
+  : <div class="avatar" aria-hidden="true">{initials}</div>}

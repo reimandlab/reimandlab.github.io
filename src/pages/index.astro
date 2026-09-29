@@ -1,0 +1,187 @@
+---
+import Base from '../layouts/Base.astro';
+import NewsList from '../components/NewsList.astro';
+import PaperItem from '../components/PaperItem.astro';
+import Avatar from '../components/Avatar.astro';
+import { getCollection, render } from 'astro:content';
+import { site, getPeople, getPapers, getNews, roleLabel } from '../lib/data';
+
+const news = (await getNews()).slice(0, 7);
+const { current, alumni, labKeys } = await getPeople();
+const pi = current.find((p) => p.data.role === 'pi');
+const members = current.filter((p) => p !== pi);
+const papers = await getPapers();
+const featured = papers.filter((p) => p.data.featured).slice(0, 8);
+const research = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
+const software = (await getCollection('software')).sort((a, b) => a.data.order - b.data.order);
+const PiBio = pi ? (await render(pi)).Content : null;
+
+const themeData = await Promise.all(research.map(async (r) => ({
+  entry: r,
+  Content: (await render(r)).Content,
+  papers: featured.filter((p) => p.data.themes.includes(r.id as any)).slice(0, 2),
+  tools: software.filter((s) => s.data.themes.includes(r.id as any)),
+})));
+
+const linkLabel: Record<string, string> = { cran: 'CRAN', bioc: 'Bioconductor', github: 'GitHub', web: 'Web server', docs: 'Docs', pypi: 'PyPI' };
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'ResearchOrganization', name: site.name,
+  url: 'https://reimandlab.org', description: site.intro,
+  parentOrganization: site.affiliations.map((a: any) => ({ '@type': 'Organization', name: a.name, url: a.url })),
+};
+---
+<Base home>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
+  <!-- Intro + news -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>{site.name}</h1>
+        <div class="tagline">{site.tagline}</div>
+        <p class="intro">{site.intro}</p>
+        <ul class="affils">{site.affiliations.map((a: any) => <li><a href={a.url}>{a.name}</a></li>)}</ul>
+        <div class="buttons">
+          <a class="btn primary" href="/publications/">Publications</a>
+          <a class="btn" href="#software">Software</a>
+          <a class="btn" href={site.links.github}>GitHub</a>
+          <a class="btn" href="#join">Join us</a>
+        </div>
+      </div>
+      <aside class="news-card" id="news" aria-labelledby="news-h">
+        <h2 id="news-h"><span>Latest news</span><a class="more" href="/news/">All news →</a></h2>
+        <NewsList items={news} />
+      </aside>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">Research</div><h2>What we work on</h2></div></div>
+      <div class="grid3">
+        {themeData.map(({ entry, Content, papers, tools }) => (
+          <article class="card theme">
+            {entry.data.icon && <img class="icon" src={entry.data.icon} alt="" loading="lazy" />}
+            <h3>{entry.data.title}</h3>
+            <Content />
+            {(papers.length > 0 || tools.length > 0) && (
+              <div class="refs">
+                {papers.length > 0 && (
+                  <div><span class="lbl">Key papers</span>
+                    {papers.map((p) => <div><a href={p.href}>{p.data.title}</a> <span class="muted">· {p.data.journal} {p.data.year}</span></div>)}
+                  </div>
+                )}
+                {tools.length > 0 && (
+                  <div><span class="lbl">Tools</span>{tools.map((t) => <a class="chip" href={`/software/${t.id}/`}>{t.data.name}</a>)}</div>
+                )}
+              </div>
+            )}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- People -->
+  <section id="people">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">People</div><h2>The team</h2></div></div>
+      {pi && (
+        <div class="pi">
+          <Avatar name={pi.data.name} photo={pi.data.photo} size={140} />
+          <div>
+            <h3>{pi.data.name}</h3>
+            <div class="role">{pi.data.title ?? roleLabel.pi}</div>
+            {pi.data.affiliation && <p>{pi.data.affiliation}</p>}
+            {PiBio && <PiBio />}
+            {pi.data.links && <div class="badges" style="margin-top:10px">{Object.entries(pi.data.links).map(([k, v]) => <a class="badge" href={v}>{k === 'x' ? 'X' : k[0].toUpperCase() + k.slice(1)}</a>)}</div>}
+          </div>
+        </div>
+      )}
+      <div class="people">
+        {members.map((p) => (
+          <div class="person">
+            <Avatar name={p.data.name} photo={p.data.photo} />
+            <div>
+              <h3>{p.data.name}</h3>
+              <div class="role">{p.data.title ?? roleLabel[p.data.role ?? 'student']}{p.data.program && ` · ${p.data.program}`}</div>
+              {p.data.interest && <p>{p.data.interest}</p>}
+            </div>
+          </div>
+        ))}
+      </div>
+      {alumni.length > 0 && (
+        <div class="alumni">
+          <h3>Alumni</h3>
+          <ul>
+            {alumni.map((p) => (
+              <li>{p.data.name}{(p.data.role || p.data.years || p.data.now) && (
+                <span class="det"> — {[p.data.role && roleLabel[p.data.role], p.data.years, p.data.now && `now ${p.data.now}`].filter(Boolean).join(' · ')}</span>
+              )}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Publications</div><h2>Selected papers</h2></div>
+        <a class="more" href="/publications/">All {papers.length} publications →</a>
+      </div>
+      <ul class="pubs">{featured.map((p) => <PaperItem paper={p} labKeys={labKeys} compact />)}</ul>
+      <p class="muted" style="margin-top:20px;font-size:15px">
+        Lab members in bold. Also on <a href={site.links.scholar}>Google Scholar</a> and <a href={site.links.pubmed}>PubMed</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Software -->
+  <section id="software">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Software</div><h2>Tools we build</h2></div>
+        <a class="more" href={site.links.github}>All code on GitHub →</a>
+      </div>
+      <div class="grid2">
+        {software.map((t) => (
+          <article class="card tool">
+            <h3><a href={`/software/${t.id}/`}>{t.data.name}</a></h3>
+            <p>{t.data.tagline}</p>
+            <div class="badges">
+              {Object.entries(t.data.links).map(([k, v]) => <a class="badge" href={v}>{linkLabel[k] ?? k}</a>)}
+              {t.data.paper && <a class="badge" href={`https://doi.org/${t.data.paper}`}>Paper</a>}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Join & contact -->
+  <section id="join" class="join">
+    <div class="wrap">
+      <div>
+        <div class="kicker">Join us</div>
+        <h2 style="font-size:28px;margin-bottom:16px">Open positions</h2>
+        <p>{site.join}</p>
+        <div class="buttons">
+          <a class="btn primary" href={`mailto:${site.contact.email}`}>Email Jüri</a>
+          {site.programs.map((p: any) => <a class="btn" href={p.url}>{p.name}</a>)}
+        </div>
+      </div>
+      <div id="contact">
+        <div class="kicker">Contact</div>
+        <address>
+          {site.contact.address.map((l: string) => <>{l}<br /></>)}
+          <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a><br />
+          <a href={site.contact.map}>Map</a>
+        </address>
+      </div>
+    </div>
+  </section>
+</Base>

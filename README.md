@@ -1,27 +1,52 @@
-# Minimal Mistakes remote theme starter
+# reimandlab.org
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Lab website built with [Astro](https://astro.build). All content lives in small
+Markdown/YAML files under `src/content/` and `src/data/`; the pages are generated from them.
 
-Contains basic configuration to get you a site with:
+## Run locally
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+Requires Node 20+ (`brew install node`).
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+```sh
+npm install      # first time only
+npm run dev      # test site at http://localhost:4321, reloads on save
+npm run build    # full build into dist/ (catches content errors)
+```
 
+## Everyday edits
+
+| To… | Edit |
+|---|---|
+| Add a news one-liner | `src/data/news.yaml`, one line at the top |
+| Add a longer news post | new file in `src/content/posts/` (copy an existing one) |
+| Add a paper | new file in `src/content/papers/`, e.g. `2026-smith-nat-commun.md` |
+| Add / move a person | `src/content/people/<name>.md`; set `status: alumni` and `now:` when someone leaves |
+| Change a tool | `src/content/software/<tool>.md` |
+| Intro, contact, join text | `src/data/site.yaml` |
+| Photos, figures | `public/images/…` |
+
+### Paper fields
+
+```yaml
 ---
+title: Integrative pathway enrichment analysis of multivariate omics data
+authors: ["Marta Paczkowska*", "Jonathan Barenboim*", "Jüri Reimand"]   # * = co-first/co-corresponding
+journal: Nature Communications
+year: 2020
+doi: 10.1038/s41467-019-13983-9
+code: https://github.com/reimandlab/ActivePathways   # optional
+themes: [multi-omics]        # drivers | multi-omics | biomarkers
+featured: true               # shown on the home page and research themes
+# lab_led: true              # normally inferred: first or last author is a lab member
+---
+```
 
-## Troubleshooting
+Lab members are bolded automatically by matching surname + first initial against
+`src/content/people/` (add other spellings to `author_names:`).
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+## Deploying
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+Pushing to `main` builds and publishes via `.github/workflows/deploy.yml`.
+Before the first merge of this branch, switch **Settings → Pages → Source** to
+**GitHub Actions** (the old site was built by Jekyll from the branch).
+Old URLs (`/team/`, `/papers/`, `/news/<post>/`, …) keep working via redirects.
