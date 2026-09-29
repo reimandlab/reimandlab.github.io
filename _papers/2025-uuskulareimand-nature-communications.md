@@ -5,4 +5,6 @@ authors_truncated: true   # Scholar export cut the list; paste the full list and
 journal: "Nature Communications"
 year: 2025
 themes: [drivers]
+lab_led: true
+featured: true
 ---
