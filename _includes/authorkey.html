@@ -2,7 +2,7 @@
 Keys for include.name: akey_full "surname firstname", akey_init "surname initial",
 akey_isinit true when the first name is only an initial ("J Reimand").
 {%- endcomment -%}
-{%- assign _parts = include.name | remove: "*" | replace: ".", " " | slugify: "latin" | split: "-" -%}
+{%- assign _parts = include.name | remove: "*" | remove: "#" | replace: ".", " " | slugify: "latin" | split: "-" -%}
 {%- assign _fn = _parts.first -%}
 {%- assign _ini = _fn | slice: 0 -%}
 {%- assign akey_full = _parts.last | append: " " | append: _fn -%}

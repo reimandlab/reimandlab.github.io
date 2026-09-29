@@ -33,7 +33,7 @@ link: https://doi.org/10.1038/...    # optional: where the one-liner points
 ```yaml
 ---
 title: Integrative pathway enrichment analysis of multivariate omics data
-authors: ["Marta Paczkowska*", "Jonathan Barenboim*", "Jüri Reimand"]   # * = co-first/co-corresponding
+authors: ["Marta Paczkowska*", "Jonathan Barenboim*", "Jüri Reimand"]   # add * for co-first, # for co-corresponding
 journal: Nature Communications
 year: 2020
 doi: 10.1038/s41467-019-13983-9
@@ -42,6 +42,7 @@ themes: [multi-omics]        # drivers | multi-omics | biomarkers
 featured: true               # shown on the home page and research themes
 # lab_led: true              # normally inferred: first or last author is a lab member
 # authors_truncated: true    # list is incomplete, shown with "et al."
+# unbold: ["Mona Meyer"]     # lab member who wasn't in the lab yet for this paper
 ---
 ```
 

@@ -1,4 +1,4 @@
-{%- comment -%} include.authors (array), include.max, include.truncated; needs labkeys.html {%- endcomment -%}
+{%- comment -%} include.authors (array; * co-first, # co-corresponding), include.max, include.truncated, include.unbold; needs labkeys.html {%- endcomment -%}
 {%- assign _max = include.max | default: 14 -%}
 {%- assign _n = include.authors | size -%}
 {%- assign _head = _max | minus: 3 -%}
@@ -12,8 +12,12 @@
     {%- continue -%}
   {%- endif -%}
   {%- unless forloop.first -%}, {% endunless -%}
-  {%- include islab.html name=a -%}
-  {%- if islab -%}<b>{{ a }}</b>{%- else -%}{{ a }}{%- endif -%}
+  {%- assign _clean = a | remove: "*" | remove: "#" -%}
+  {%- capture _marks -%}{% if a contains "*" %}*{% endif %}{% if a contains "#" %}#{% endif %}{%- endcapture -%}
+  {%- include islab.html name=_clean -%}
+  {%- if include.unbold contains _clean -%}{%- assign islab = false -%}{%- endif -%}
+  {%- if islab -%}<b>{{ _clean }}</b>{%- else -%}{{ _clean }}{%- endif -%}
+  {%- if _marks != "" -%}<sup class="mk">{{ _marks }}</sup>{%- endif -%}
 {%- endfor -%}
 {%- if include.truncated -%}, et al.{%- endif -%}
 </div>

@@ -159,6 +159,7 @@ section:first-of-type { border-top: 0; }
 .pub .t:hover { text-decoration: underline; }
 .pub .a { font-size: 14.5px; color: var(--muted); margin: 4px 0 2px; }
 .pub .a b { color: var(--text); font-weight: 600; }
+.pub .a .mk { font-size: 0.75em; margin-left: 1px; color: var(--muted); }
 .pub .j { font-size: 14.5px; }
 .pub .j i { font-style: italic; }
 .pub .links { display: inline-flex; gap: 10px; margin-left: 8px; font: 12.5px var(--mono); }

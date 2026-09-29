@@ -1,6 +1,8 @@
 {%- comment -%} include.paper, include.compact; needs labkeys.html {%- endcomment -%}
 {%- assign p = include.paper -%}
 {%- include islab.html name=p.authors.first -%}{%- assign _lab1 = islab -%}
+{%- assign _first = p.authors.first | remove: "*" | remove: "#" -%}
+{%- if p.unbold contains _first -%}{%- assign _lab1 = false -%}{%- endif -%}
 {%- include islab.html name=p.authors.last -%}{%- assign _lab2 = islab -%}
 {%- if include.plain -%}{%- assign lab = false -%}
 {%- elsif p.lab_led == true -%}{%- assign lab = true -%}
@@ -19,7 +21,7 @@
   <a class="t" href="{{ href }}">{{ p.title }}</a>
   {%- if p.featured and include.compact != true %}<span class="star" title="Featured">★</span>{% endif %}
   {%- if include.compact -%}{%- assign _mx = 10 -%}{%- else -%}{%- assign _mx = 14 -%}{%- endif -%}
-  {% include authors.html authors=p.authors max=_mx truncated=p.authors_truncated %}
+  {% include authors.html authors=p.authors max=_mx truncated=p.authors_truncated unbold=p.unbold %}
   <div class="j"><i>{{ p.journal }}</i> {{ p.year }}
     <span class="links">
       {%- if p.doi %}<a href="https://doi.org/{{ p.doi }}">doi</a>{% endif -%}
