@@ -45,6 +45,13 @@ featured: true               # shown on the home page and research themes
 ---
 ```
 
+### Adding new papers from Google Scholar
+
+1. On your Scholar profile, tick the select-all box → **Export** → **BibTeX**, save the file.
+2. From the repo folder run `python3 scripts/import_scholar.py ~/Downloads/citations.bib`
+3. Only papers not already on the site are added (listed on screen). Open the new
+   files in `_papers/` to add `featured: true`, fix themes, or paste a full author list.
+
 Lab members are bolded automatically by matching surname + first initial against
 `_people/` (add other spellings to `author_names:`).
 

@@ -1,8 +1,12 @@
-"""Convert a Google Scholar BibTeX export into paper files in _papers/.
+"""Add new papers from a Google Scholar BibTeX export to _papers/.
 
-Usage:  python3 scripts/import_scholar.py scripts/import/scholar.bib
-Existing paper files (matched by title) are never overwritten. Writes a review
-list to scripts/import/REVIEW.md for entries that need a human check.
+Usage (from the repo root):
+    python3 scripts/import_scholar.py path/to/citations.bib
+
+Papers already on the site (matched by title, ignoring punctuation and case) are
+skipped, and existing files are never changed. New files are listed on screen;
+entries worth a second look (truncated author lists, guessed years, no theme)
+are also written to scripts/import/REVIEW.md.
 """
 import re, sys, pathlib, unicodedata
 
@@ -93,13 +97,15 @@ def main():
         lines += ['---', '']
         (OUT / f'{stem}.md').write_text('\n'.join(lines))
         written += 1
+        print(f'  new: _papers/{stem}.md  ({year}, {journal}) {title[:70]}')
         if truncated: notes.append('author list truncated; lab-led guessed from first author only')
         if not themes: notes.append('no theme guessed')
         if not field(body, 'author'): notes.append('no authors in export (group author?)')
         if notes: review.append(f'- `{stem}.md`: {title[:90]} — ' + '; '.join(notes))
-    pathlib.Path('scripts/import/REVIEW.md').write_text(
+    if review: pathlib.Path('scripts/import/REVIEW.md').write_text(
         '# Scholar import: entries to check\n\nNo DOIs in the Scholar export: add `doi:` where you want a link.\n\n' + '\n'.join(review) + '\n')
-    print(f'wrote {written}, skipped {skipped} already present, {len(review)} flagged for review')
+    print(f'{written} new paper(s) added, {skipped} already on the site' +
+          (f'; {len(review)} flagged in scripts/import/REVIEW.md' if review else ''))
 
 if __name__ == '__main__':
     main()
