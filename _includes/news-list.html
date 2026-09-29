@@ -1,0 +1,13 @@
+{%- comment -%} include.posts (array of posts) {%- endcomment -%}
+<ul class="news">
+{%- for n in include.posts %}
+  {%- assign _body = n.content | strip_html | strip -%}
+  <li>
+    <time datetime="{{ n.date | date: '%Y-%m-%d' }}">{{ n.date | date: "%b %Y" }}</time>
+    <span><span class="tag {{ n.type }}">{{ n.type }}</span>
+    {%- if n.link -%}<a href="{{ n.link }}">{{ n.short | default: n.title }}</a>
+    {%- elsif _body != "" -%}<a href="{{ n.url | relative_url }}">{{ n.short | default: n.title }}</a>
+    {%- else -%}{{ n.short | default: n.title }}{%- endif -%}</span>
+  </li>
+{%- endfor %}
+</ul>

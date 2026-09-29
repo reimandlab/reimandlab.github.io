@@ -1,0 +1,33 @@
+{%- comment -%} include.paper, include.compact; needs `labkeys` {%- endcomment -%}
+{%- assign p = include.paper -%}
+{%- include authorkey.html name=p.authors.first -%}{%- assign _k1 = "|" | append: akey | append: "|" -%}
+{%- include authorkey.html name=p.authors.last -%}{%- assign _k2 = "|" | append: akey | append: "|" -%}
+{%- if p.lab_led == true -%}{%- assign lab = true -%}
+{%- elsif p.lab_led == false -%}{%- assign lab = false -%}
+{%- elsif labkeys contains _k1 -%}{%- assign lab = true -%}
+{%- elsif p.authors_truncated != true and labkeys contains _k2 -%}{%- assign lab = true -%}
+{%- else -%}{%- assign lab = false -%}{%- endif -%}
+{%- if p.doi -%}{%- assign href = "https://doi.org/" | append: p.doi -%}
+{%- elsif p.url -%}{%- assign href = p.url -%}
+{%- elsif p.preprint -%}{%- assign href = p.preprint -%}
+{%- else -%}{%- assign href = p.title | prepend: '"' | append: '"' | url_encode | prepend: "https://scholar.google.com/scholar?q=" -%}{%- endif -%}
+{%- capture searchtext -%}{{ p.title }} {{ p.authors | join: " " }} {{ p.journal }} {{ p.year }}{%- endcapture -%}
+<li class="pub{% unless lab or include.compact %} collab{% endunless %}"
+    data-lab="{% if lab %}1{% else %}0{% endif %}"
+    data-featured="{% if p.featured %}1{% else %}0{% endif %}"
+    data-preprint="{% if p.type == 'preprint' %}1{% else %}0{% endif %}"
+    data-themes="{{ p.themes | join: ' ' }}"
+    data-text="{{ searchtext | downcase | escape }}">
+  <a class="t" href="{{ href }}">{{ p.title }}</a>
+  {%- if p.featured and include.compact != true %}<span class="star" title="Featured">★</span>{% endif %}
+  {%- if include.compact -%}{%- assign _mx = 10 -%}{%- else -%}{%- assign _mx = 14 -%}{%- endif -%}
+  {% include authors.html authors=p.authors max=_mx truncated=p.authors_truncated %}
+  <div class="j"><i>{{ p.journal }}</i> {{ p.year }}
+    <span class="links">
+      {%- if p.doi %}<a href="https://doi.org/{{ p.doi }}">doi</a>{% endif -%}
+      {%- if p.pmid %}<a href="https://pubmed.ncbi.nlm.nih.gov/{{ p.pmid }}/">pubmed</a>{% endif -%}
+      {%- if p.preprint and p.type != 'preprint' %}<a href="{{ p.preprint }}">preprint</a>{% endif -%}
+      {%- if p.code %}<a href="{{ p.code }}">code</a>{% endif -%}
+    </span>
+  </div>
+</li>

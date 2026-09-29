@@ -1,4 +1,4 @@
-"""Convert a Google Scholar BibTeX export into paper files in src/content/papers/.
+"""Convert a Google Scholar BibTeX export into paper files in _papers/.
 
 Usage:  python3 scripts/import_scholar.py scripts/import/scholar.bib
 Existing paper files (matched by title) are never overwritten. Writes a review
@@ -7,7 +7,7 @@ list to scripts/import/REVIEW.md for entries that need a human check.
 import re, sys, pathlib, unicodedata
 
 SRC = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else 'scripts/import/scholar.bib')
-OUT = pathlib.Path('src/content/papers')
+OUT = pathlib.Path('_papers')
 
 LATEX = {r'\"u': 'ü', r'\"o': 'ö', r'\"a': 'ä', r'\"U': 'Ü', r'\"O': 'Ö', r'\"A': 'Ä', r'\"e': 'ë', r'\"i': 'ï',
          r"\'e": 'é', r"\'a": 'á', r"\'o": 'ó', r"\'u": 'ú', r"\'i": 'í', r"\'\i": 'í', r"\'E": 'É', r"\'c": 'ć',

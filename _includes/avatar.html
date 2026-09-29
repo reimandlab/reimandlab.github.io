@@ -1,0 +1,7 @@
+{%- assign _size = include.size | default: 72 -%}
+{%- if include.photo -%}
+<img class="avatar" src="{{ include.photo | relative_url }}" alt="{{ include.name }}" width="{{ _size }}" height="{{ _size }}" loading="lazy">
+{%- else -%}
+{%- assign _w = include.name | split: " " -%}
+<div class="avatar" aria-hidden="true">{{ _w.first | slice: 0 }}{{ _w.last | slice: 0 }}</div>
+{%- endif -%}

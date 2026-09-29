@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{%- include labkeys.html -%}
+{%- assign s = site.data.site -%}
+<div class="page">
+  <div class="wrap">
+    <a class="back" href="{{ '/' | relative_url }}#software">← Software</a>
+    <h1 class="mono">{{ page.title }}</h1>
+    <p class="muted" style="font-size:19px">{{ page.tagline }}</p>
+    <div class="badges" style="margin:16px 0 28px">
+      {%- for l in page.links %}<a class="badge" href="{{ l[1] }}">{{ s.link_labels[l[0]] | default: l[0] }}</a>{% endfor -%}
+    </div>
+    <div class="prose">{{ content }}</div>
+    {%- if page.image %}<div class="figure"><img src="{{ page.image | relative_url }}" alt="{{ page.title }} overview"></div>{% endif %}
+    {%- if page.paper %}
+    {%- assign cite = site.papers | where: "doi", page.paper | first %}
+    <div class="kicker" style="margin-top:32px">Please cite</div>
+    {%- if cite %}<ul class="pubs">{% include paper.html paper=cite compact=true %}</ul>
+    {%- else %}<p><a href="https://doi.org/{{ page.paper }}">doi:{{ page.paper }}</a></p>{% endif %}
+    {%- endif %}
+  </div>
+</div>

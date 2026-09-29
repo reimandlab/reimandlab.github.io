@@ -1,0 +1,15 @@
+{%- comment -%}
+Builds `labkeys`, a string like "|reimand j|bahcheli a|…|" with surname + first initial
+of every lab member (current and alumni, plus their author_names spellings).
+{%- endcomment -%}
+{%- assign labkeys = "|" -%}
+{%- for person in site.people -%}
+  {%- assign names = person.author_names | join: "|" -%}
+  {%- assign names = person.name | append: "|" | append: names | split: "|" -%}
+  {%- for nm in names -%}
+    {%- if nm != "" -%}
+      {%- include authorkey.html name=nm -%}
+      {%- assign labkeys = labkeys | append: akey | append: "|" -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}

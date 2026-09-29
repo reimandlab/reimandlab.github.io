@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="page">
+  <div class="wrap">
+    <a class="back" href="{{ '/news/' | relative_url }}">← All news</a>
+    <div class="kicker"><span class="tag {{ page.type }}">{{ page.type }}</span> {{ page.date | date: "%-d %B %Y" }}</div>
+    <h1 style="max-width:22em">{{ page.title }}</h1>
+    <div class="prose" style="margin-top:24px">{{ content }}</div>
+  </div>
+</article>

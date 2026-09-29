@@ -1,0 +1,20 @@
+{%- comment -%} include.authors (array), include.max, include.truncated; needs `labkeys` {%- endcomment -%}
+{%- assign _max = include.max | default: 14 -%}
+{%- assign _n = include.authors | size -%}
+{%- assign _head = _max | minus: 3 -%}
+{%- assign _tail = _n | minus: 2 -%}
+{%- assign _gap = _head | plus: 1 -%}
+<div class="a">
+{%- for a in include.authors -%}
+  {%- assign _i = forloop.index -%}
+  {%- if _n > _max and _i > _head and _i <= _tail -%}
+    {%- if _i == _gap -%}, …{%- endif -%}
+    {%- continue -%}
+  {%- endif -%}
+  {%- unless forloop.first -%}, {% endunless -%}
+  {%- include authorkey.html name=a -%}
+  {%- assign _needle = "|" | append: akey | append: "|" -%}
+  {%- if labkeys contains _needle -%}<b>{{ a }}</b>{%- else -%}{{ a }}{%- endif -%}
+{%- endfor -%}
+{%- if include.truncated -%}, et al.{%- endif -%}
+</div>

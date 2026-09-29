@@ -1,0 +1,18 @@
+---
+layout: default
+title: News
+redirect_from: /posts/
+---
+{%- assign byyear = site.posts | group_by_exp: "p", "p.date | date: '%Y'" -%}
+<div class="page">
+  <div class="wrap" style="max-width:820px">
+    <a class="back" href="{{ '/' | relative_url }}">← Home</a>
+    <h1>News</h1>
+    {%- for g in byyear %}
+    <div class="year-group">
+      <h3>{{ g.name }}</h3>
+      {% include news-list.html posts=g.items %}
+    </div>
+    {%- endfor %}
+  </div>
+</div>

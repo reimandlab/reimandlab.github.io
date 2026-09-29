@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+{%- assign s = site.data.site -%}
+{%- if page.title and page.home != true -%}{%- assign ptitle = page.title | append: " · " | append: s.name -%}{%- else -%}{%- assign ptitle = s.name | append: " · " | append: s.tagline -%}{%- endif -%}
+{%- assign pdesc = page.short | default: page.tagline | default: s.intro | strip_html | normalize_whitespace -%}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ ptitle }}</title>
+  <meta name="description" content="{{ pdesc | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="{{ '/images/logo.png' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ s.name }} news" href="{{ '/feed.xml' | relative_url }}">
+  <meta property="og:title" content="{{ ptitle | escape }}">
+  <meta property="og:description" content="{{ pdesc | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ '/images/logo.png' | absolute_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{{ '/' | relative_url }}"><img class="logo" src="{{ '/images/logo.png' | relative_url }}" alt="" width="28" height="28"><span>{{ s.name }}</span></a>
+      <nav class="nav" aria-label="Main">
+        {%- assign nav = "News:news,Research:research,People:people,Publications:publications,Software:software,Join:join" | split: "," -%}
+        {%- for item in nav -%}{%- assign kv = item | split: ":" %}
+        <a href="{{ '/' | relative_url }}#{{ kv[1] }}" data-spy="{{ kv[1] }}">{{ kv[0] }}</a>
+        {%- endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main>
+{{ content }}
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong style="color:var(--text)">{{ s.name }}</strong>
+        {%- for a in s.affiliations %} · <a href="{{ a.url }}">{{ a.name }}</a>{% endfor %}
+      </div>
+      <nav aria-label="Elsewhere">
+        <a href="{{ s.links.github }}">GitHub</a>
+        <a href="{{ s.links.scholar }}">Google Scholar</a>
+        <a href="{{ s.links.x }}">X</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </nav>
+    </div>
+  </footer>
+
+  {%- if page.home %}
+  <script>
+    // Highlight the menu item of the section currently in view.
+    (function () {
+      var links = {};
+      document.querySelectorAll('.nav a[data-spy]').forEach(function (a) { links[a.dataset.spy] = a; });
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          Object.values(links).forEach(function (a) { a.removeAttribute('aria-current'); });
+          if (links[e.target.id]) links[e.target.id].setAttribute('aria-current', 'true');
+        });
+      }, { rootMargin: '-40% 0px -55% 0px' });
+      Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) obs.observe(el); });
+    })();
+  </script>
+  {%- endif %}
+</body>
+</html>

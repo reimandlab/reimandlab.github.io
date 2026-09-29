@@ -1,0 +1,59 @@
+# Site-wide settings. Edit freely.
+name: Reimand Lab
+tagline: Computational biology and cancer genomics
+intro: >-
+  We develop statistical and machine-learning methods to decode cancer genomes
+  and multi-omics data, finding the mutations, pathways and biomarkers that
+  shape how tumours grow and respond to therapy.
+affiliations:
+  - name: Ontario Institute for Cancer Research
+    url: https://oicr.on.ca
+  - name: Medical Biophysics, University of Toronto
+    url: https://medbio.utoronto.ca
+  - name: Molecular Genetics, University of Toronto
+    url: https://moleculargenetics.utoronto.ca
+links:
+  github: https://github.com/reimandlab
+  scholar: https://scholar.google.ca/citations?user=hy4bI4UAAAAJ&view_op=list_works&sortby=pubdate
+  pubmed: https://pubmed.ncbi.nlm.nih.gov/?term=Reimand+J%5Bau%5D&sort=date
+  x: https://x.com/reimand
+contact:
+  email: juri.reimand@utoronto.ca
+  address:
+    - Ontario Institute for Cancer Research
+    - MaRS Centre, 661 University Avenue, Suite 510
+    - Toronto, ON M5G 0A3, Canada
+  map: https://maps.google.com/?q=MaRS+Centre+West+Tower+661+University+Avenue+Toronto
+join: >-
+  We welcome graduate students, postdoctoral fellows and staff with skills and
+  motivation for research in computational biology, genomics, statistics and
+  machine learning. Graduate students join through the MSc and PhD programs of
+  Medical Biophysics or Molecular Genetics at the University of Toronto. To
+  enquire, email Jüri with a CV and a short statement of interest.
+programs:
+  - name: Medical Biophysics graduate program
+    url: https://medbio.utoronto.ca
+  - name: Molecular Genetics graduate program
+    url: https://moleculargenetics.utoronto.ca
+
+# Labels (rarely edited)
+roles:
+  pi: Principal Investigator
+  postdoc: Postdoctoral Fellow
+  staff: Staff Scientist
+  phd: PhD Student
+  msc: MSc Student
+  student: Research Student
+  visitor: Visiting Researcher
+role_order: [pi, postdoc, staff, phd, msc, student, visitor]
+themes:
+  drivers: Drivers & passengers
+  multi-omics: Multi-omics
+  biomarkers: Biomarkers & targets
+link_labels:
+  cran: CRAN
+  bioc: Bioconductor
+  github: GitHub
+  web: Web server
+  docs: Docs
+  pypi: PyPI

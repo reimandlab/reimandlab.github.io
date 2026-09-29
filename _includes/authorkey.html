@@ -1,0 +1,4 @@
+{%- comment -%} Sets `akey` to "surname initial" for include.name, e.g. "Jüri Reimand*" -> "reimand j" {%- endcomment -%}
+{%- assign _parts = include.name | remove: "*" | replace: ".", " " | slugify: "latin" | split: "-" -%}
+{%- assign _first = _parts.first | slice: 0 -%}
+{%- assign akey = _parts.last | append: " " | append: _first -%}

@@ -1,0 +1,79 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+redirect_from: /papers/
+---
+{%- include labkeys.html -%}
+{%- assign s = site.data.site -%}
+{%- assign papers = site.papers | sort: "year" | reverse -%}
+{%- assign byyear = papers | group_by: "year" -%}
+<div class="page">
+  <div class="wrap">
+    <a class="back" href="{{ '/' | relative_url }}#publications">← Home</a>
+    <h1>Publications</h1>
+    <p class="muted">
+      Lab members in bold; ★ marks featured papers; collaborations are shown in lighter type.
+      Also on <a href="{{ s.links.scholar }}">Google Scholar</a> and <a href="{{ s.links.pubmed }}">PubMed</a>.
+    </p>
+
+    <div class="filters" role="group" aria-label="Filter publications">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="lab" aria-pressed="false">Lab-led</button>
+      <button type="button" data-filter="featured" aria-pressed="false">Featured</button>
+      <button type="button" data-filter="preprint" aria-pressed="false">Preprints</button>
+      {%- for t in s.themes %}
+      <button type="button" data-filter="theme:{{ t[0] }}" aria-pressed="false">{{ t[1] }}</button>
+      {%- endfor %}
+      <input type="search" placeholder="Search title, author, journal…" aria-label="Search publications">
+      <span class="count" aria-live="polite">{{ papers.size }} papers</span>
+    </div>
+
+    {%- for g in byyear %}
+    <div class="year-group">
+      <h3>{{ g.name }}</h3>
+      <ul class="pubs">
+        {%- assign items = g.items | sort: "title" -%}
+        {%- for p in items %}{% include paper.html paper=p %}{% endfor %}
+      </ul>
+    </div>
+    {%- endfor %}
+  </div>
+</div>
+
+<script>
+  (function () {
+    var buttons = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
+    var search = document.querySelector('.filters input');
+    var count = document.querySelector('.count');
+    var filter = 'all';
+    function apply() {
+      var q = search.value.trim().toLowerCase(), n = 0;
+      document.querySelectorAll('.year-group').forEach(function (g) {
+        var visible = 0;
+        g.querySelectorAll('.pub').forEach(function (li) {
+          var d = li.dataset;
+          var ok = (filter === 'all' ||
+            (filter === 'lab' && d.lab === '1') ||
+            (filter === 'featured' && d.featured === '1') ||
+            (filter === 'preprint' && d.preprint === '1') ||
+            (filter.indexOf('theme:') === 0 && (d.themes || '').split(' ').indexOf(filter.slice(6)) !== -1)) &&
+            (!q || (d.text || '').indexOf(q) !== -1);
+          li.hidden = !ok;
+          if (ok) visible++;
+        });
+        g.hidden = visible === 0;
+        n += visible;
+      });
+      count.textContent = n + (n === 1 ? ' paper' : ' papers');
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        filter = b.dataset.filter;
+        buttons.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+        apply();
+      });
+    });
+    search.addEventListener('input', apply);
+  })();
+</script>

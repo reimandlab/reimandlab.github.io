@@ -1,0 +1,39 @@
+# Site settings. Restart `jekyll serve` after editing this file.
+title: Reimand Lab
+description: >-
+  Computational biology and cancer genomics at the Ontario Institute for Cancer
+  Research and the University of Toronto.
+url: https://reimandlab.org
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed          # /feed.xml from _posts
+  - jekyll-redirect-from # old URLs -> new pages
+  - jekyll-sitemap
+
+collections:
+  people:   { output: false }
+  papers:   { output: false }
+  research: { output: false }
+  software: { output: true, permalink: /software/:name/ }
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post, permalink: "/news/:title/" }
+  - scope: { path: "", type: software }
+    values: { layout: software }
+
+feed:
+  path: feed.xml
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - vendor/
+  - citations
