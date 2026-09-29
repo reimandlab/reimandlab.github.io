@@ -4,4 +4,5 @@ authors: ["Mykhaylo Slobodyanyuk", "Alexander T Bahcheli", "Zoe P Klein", "Masro
 journal: "Nature Communications"
 year: 2024
 themes: [multi-omics]
+featured: true
 ---

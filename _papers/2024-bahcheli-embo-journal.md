@@ -4,5 +4,6 @@ authors: ["Alexander T Bahcheli", "Hyun-Kee Min", "Masroor Bayati", "Hongyu Zhao
 authors_truncated: true   # Scholar export cut the list; paste the full list and remove this line
 journal: "The EMBO Journal"
 year: 2024
-themes: []
+themes: [biomarkers]
+featured: true
 ---
