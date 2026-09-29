@@ -5,3 +5,7 @@ _site/
 vendor/
 Gemfile.lock
 .DS_Store
+node_modules/
+package-lock.json
+.astro/
+citations
